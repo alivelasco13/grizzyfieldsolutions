@@ -5,254 +5,255 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grizzy Field Solutions LLC | Land Clearing &amp; Site Prep in North Central Florida</title>
 <meta name="description" content="Grizzy Field Solutions LLC provides land clearing, forestry mulching, brush removal, grading, driveway clearing, pasture cleanup, storm cleanup, and site preparation across Gainesville and North Central Florida.">
+<link rel="icon" type="image/png" href="./logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* TODO: Replace all placeholder contact info before going live:
-   PHONE: (352) 555-0100
-   EMAIL: info@grizzyfieldsolutions.com
-   FACEBOOK: https://facebook.com/grizzyfieldsolutions
+/* ─────────────────────────────────────────────
+   TODO — replace placeholder contact info before launch:
+   PHONE:     (352) 555-0100
+   EMAIL:     info@grizzyfieldsolutions.com
+   FACEBOOK:  https://facebook.com/grizzyfieldsolutions
    INSTAGRAM: https://instagram.com/grizzyfieldsolutions
-*/
+   ───────────────────────────────────────────── */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --blue:      #1A4FC4;
-  --blue-dark: #0d2a6e;
-  --blue-mid:  #1542a8;
-  --blue-lt:   #EEF3FC;
-  --blue-sky:  #7DADF5;
-  --black:     #1a1a1a;
-  --gray:      #555;
-  --gray-lt:   #888;
-  --border:    #e0e0e0;
-  --bg-light:  #F5F8FF;
-  --bg-off:    #fafafa;
+  --ink:      #14161b;
+  --navy:     #0c2763;
+  --navy-2:   #0a1f50;
+  --blue:     #1A4FC4;
+  --blue-mid: #1542a8;
+  --sky:      #7DADF5;
+  --paper:    #F6F5F2;
+  --paper-2:  #EFEDE8;
+  --line:     #E4E2DB;
+  --line-d:   #D8D5CD;
+  --gray:     #57564F;
+  --gray-lt:  #8A887F;
+  --white:    #ffffff;
 }
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; color: var(--black); background: #fff; line-height: 1.6; }
+body { font-family: 'Inter', sans-serif; color: var(--ink); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; letter-spacing: -.01em; }
+
+/* shared eyebrow */
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; }
+.eyebrow::before { content: ''; width: 26px; height: 2px; background: var(--blue); display: inline-block; }
+.h2 { font-size: 42px; font-weight: 800; line-height: 1.02; color: var(--ink); }
+.lead { font-size: 16px; color: var(--gray); line-height: 1.7; max-width: 560px; }
 
 /* ── NAV ── */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: #fff; border-bottom: 3px solid var(--blue);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 40px; box-shadow: 0 2px 10px rgba(0,0,0,.07);
-  gap: 16px;
-}
-.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-.nav-logo img { height: 56px; width: auto; object-fit: contain; mix-blend-mode: multiply; }
-.nav-logo-fallback { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--blue); letter-spacing: 1px; line-height: 1; display: none; }
-.nav-logo-fallback span { color: var(--black); }
-.nav-center { display: flex; gap: 24px; align-items: center; }
-.nav-center a { font-size: 13px; font-weight: 600; color: #333; text-decoration: none; letter-spacing: .2px; transition: color .15s; white-space: nowrap; }
+nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 32px; gap: 20px; }
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo img { height: 50px; width: auto; display: block; }
+.nav-logo-fallback { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--blue); letter-spacing: .5px; display: none; }
+.nav-center { display: flex; gap: 28px; align-items: center; }
+.nav-center a { font-size: 14px; font-weight: 600; color: #44433d; text-decoration: none; transition: color .15s; }
 .nav-center a:hover { color: var(--blue); }
-.nav-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.nav-phone { display: flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 700; color: var(--black); text-decoration: none; letter-spacing: .2px; transition: color .15s; white-space: nowrap; }
+.nav-right { display: flex; align-items: center; gap: 18px; flex-shrink: 0; }
+.nav-phone { display: flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 700; color: var(--ink); text-decoration: none; transition: color .15s; white-space: nowrap; }
 .nav-phone:hover { color: var(--blue); }
-.nav-phone svg { flex-shrink: 0; }
-.btn-nav { background: var(--blue); color: #fff; padding: 10px 18px; border-radius: 4px; font-size: 13px; font-weight: 700; border: none; cursor: pointer; text-decoration: none; letter-spacing: .3px; transition: background .15s; white-space: nowrap; }
-.btn-nav:hover { background: var(--blue-mid); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: inherit; font-weight: 700; font-size: 14px; border-radius: 6px; cursor: pointer; text-decoration: none; transition: all .16s ease; border: 1.5px solid transparent; white-space: nowrap; }
+.btn-sm { padding: 9px 18px; font-size: 13px; }
+.btn-blue { background: var(--blue); color: #fff; }
+.btn-blue:hover { background: var(--blue-mid); transform: translateY(-1px); }
+.btn-lg { padding: 15px 28px; font-size: 15px; }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+.btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+.btn-light { background: #fff; color: var(--navy); }
+.btn-light:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+.btn-dark { background: var(--ink); color: #fff; }
+.btn-dark:hover { background: #000; transform: translateY(-1px); }
 
 /* ── HERO ── */
-.hero { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); padding: 72px 40px 68px; position: relative; overflow: hidden; }
-.hero::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,.03) 39px, rgba(255,255,255,.03) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,.03) 39px, rgba(255,255,255,.03) 40px); pointer-events: none; }
-.hero-layout { display: grid; grid-template-columns: 1fr 420px; gap: 48px; align-items: center; position: relative; z-index: 1; }
-.hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: rgba(255,255,255,.55); text-transform: uppercase; margin-bottom: 16px; }
-.hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 800; color: #fff; line-height: 1.04; letter-spacing: -.5px; margin-bottom: 18px; }
-.hero-sub { font-size: 15px; color: rgba(255,255,255,.75); line-height: 1.75; margin-bottom: 32px; max-width: 500px; }
-.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
-.btn-primary { background: #fff; color: var(--blue); padding: 14px 26px; border-radius: 4px; font-weight: 700; font-size: 14px; border: none; cursor: pointer; text-decoration: none; letter-spacing: .2px; display: inline-flex; align-items: center; gap: 8px; transition: opacity .15s; }
-.btn-primary:hover { opacity: .9; }
-.btn-outline { background: transparent; color: #fff; padding: 13px 22px; border-radius: 4px; font-weight: 600; font-size: 14px; border: 1.5px solid rgba(255,255,255,.4); cursor: pointer; text-decoration: none; display: inline-block; transition: border-color .15s, background .15s; }
-.btn-outline:hover { border-color: rgba(255,255,255,.8); background: rgba(255,255,255,.06); }
-.hero-trust-line { font-size: 12px; color: rgba(255,255,255,.45); font-weight: 500; letter-spacing: .3px; }
-.hero-visual { position: relative; }
-.hero-img-frame { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.15); border-radius: 10px; aspect-ratio: 4/3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 28px; }
-.hero-img-frame svg { opacity: .3; }
-.hero-img-label { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.45); text-align: center; letter-spacing: .3px; }
-.hero-card { position: absolute; bottom: -14px; left: -14px; background: #fff; border-radius: 8px; padding: 14px 18px; box-shadow: 0 8px 28px rgba(0,0,0,.18); display: flex; align-items: center; gap: 12px; min-width: 210px; }
-.hero-card-dot { width: 10px; height: 10px; border-radius: 50%; background: #22c55e; flex-shrink: 0; box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
-.hero-card-text { font-size: 12px; font-weight: 700; color: var(--black); line-height: 1.4; }
-.hero-card-text span { display: block; font-size: 11px; font-weight: 500; color: var(--gray-lt); }
+.hero { background: radial-gradient(120% 130% at 80% 0%, #123b8f 0%, var(--navy) 45%, var(--navy-2) 100%); color: #fff; position: relative; overflow: hidden; }
+.hero::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1px, transparent 0); background-size: 28px 28px; pointer-events: none; }
+.hero-inner { max-width: 1180px; margin: 0 auto; padding: 92px 32px 96px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
+.hero .eyebrow { color: var(--sky); }
+.hero .eyebrow::before { background: var(--sky); }
+.hero h1 { font-size: 60px; font-weight: 800; line-height: .98; color: #fff; margin-bottom: 22px; }
+.hero h1 .accent { color: var(--sky); }
+.hero-sub { font-size: 17px; color: rgba(255,255,255,.78); line-height: 1.65; margin-bottom: 34px; max-width: 500px; }
+.hero-actions { display: flex; gap: 13px; flex-wrap: wrap; margin-bottom: 30px; }
+.hero-trust { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.hero-trust span { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); }
+.hero-trust span::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sky); }
 
-/* ── TRUST BAR ── */
-.trust-bar { background: var(--bg-off); border-bottom: 1px solid var(--border); display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; }
-.tbar-item { display: flex; align-items: center; gap: 9px; padding: 15px 28px; border-right: 1px solid var(--border); }
-.tbar-item:last-child { border-right: none; }
-.tbar-label { font-size: 12px; font-weight: 700; color: var(--black); white-space: nowrap; }
+/* hero showcase panel */
+.hero-panel { background: linear-gradient(180deg, #ffffff 0%, #f7f8fa 100%); border-radius: 16px; padding: 40px 36px 30px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); position: relative; }
+.hero-panel-logo { width: 100%; max-width: 320px; margin: 0 auto 22px; display: block; }
+.hero-panel-cap { text-align: center; border-top: 1px solid var(--line); padding-top: 20px; }
+.hero-panel-cap strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 19px; font-weight: 700; color: var(--ink); letter-spacing: .02em; }
+.hero-panel-cap span { font-size: 13px; color: var(--gray-lt); }
+.hero-status { position: absolute; top: 20px; right: 20px; display: inline-flex; align-items: center; gap: 7px; background: #fff; border: 1px solid var(--line); border-radius: 30px; padding: 6px 13px; box-shadow: 0 6px 18px rgba(0,0,0,.1); }
+.hero-status .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+.hero-status span { font-size: 12px; font-weight: 700; color: var(--ink); }
+
+/* ── TRUST STRIP ── */
+.trust-strip { background: var(--paper); border-bottom: 1px solid var(--line); }
+.trust-strip-inner { max-width: 1180px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; }
+.tstrip { flex: 1; min-width: 150px; display: flex; align-items: center; gap: 11px; padding: 22px 8px; border-right: 1px solid var(--line); justify-content: center; }
+.tstrip:last-child { border-right: none; }
+.tstrip svg { flex-shrink: 0; }
+.tstrip span { font-size: 13px; font-weight: 700; color: var(--ink); white-space: nowrap; }
 
 /* ── SECTION BASE ── */
-section { padding: 68px 40px; }
-.section-label { font-size: 10px; font-weight: 700; letter-spacing: 3px; color: var(--blue); text-transform: uppercase; margin-bottom: 8px; }
-.section-h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 38px; font-weight: 800; color: var(--black); line-height: 1.05; margin-bottom: 10px; }
-.section-sub { font-size: 15px; color: var(--gray); line-height: 1.75; max-width: 560px; }
-
-/* ── CONTACT STRIP ── */
-.contact-strip { background: var(--blue); padding: 18px 40px; display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
-.cstrip-item { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.cstrip-label { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: .2px; }
-.cstrip-label small { font-size: 10px; font-weight: 500; opacity: .65; display: block; letter-spacing: 1px; text-transform: uppercase; }
-.cstrip-divider { width: 1px; height: 36px; background: rgba(255,255,255,.2); }
-.social-strip { display: flex; gap: 10px; align-items: center; }
-.social-icon { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 4px; background: rgba(255,255,255,.15); transition: background .15s; text-decoration: none; }
-.social-icon:hover { background: rgba(255,255,255,.28); }
-
-/* ── ABOUT ── */
-.about-section { background: var(--bg-off); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.about-layout { display: grid; grid-template-columns: 260px 1fr; gap: 48px; align-items: start; margin-top: 36px; }
-.photo-block { display: flex; flex-direction: column; gap: 0; }
-.photo-placeholder { background: #dce5ef; border-radius: 8px; aspect-ratio: 3/4; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; }
-.photo-placeholder-text { font-size: 11px; font-weight: 600; color: #7a8ba8; text-align: center; line-height: 1.5; }
-.owner-name-block { background: var(--blue); border-radius: 0 0 6px 6px; padding: 12px 16px; }
-.owner-name-block strong { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800; color: #fff; letter-spacing: .5px; display: block; }
-.owner-name-block span { font-size: 11px; color: rgba(255,255,255,.65); font-weight: 600; letter-spacing: .5px; }
-.about-text p { font-size: 15px; color: #444; line-height: 1.85; margin-bottom: 20px; }
-.about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-.about-tag { display: inline-block; padding: 6px 13px; background: var(--blue-lt); border-radius: 3px; font-size: 12px; font-weight: 700; color: var(--blue); }
+.sec { padding: 96px 32px; }
+.sec-head { max-width: 640px; margin-bottom: 52px; }
+.sec-head .lead { margin-top: 14px; }
+.sec-paper { background: var(--paper); }
 
 /* ── SERVICES ── */
-.services-section { border-top: 1px solid var(--border); }
-.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 36px; }
-.service-card { border: 1px solid var(--border); border-radius: 6px; padding: 22px 20px; position: relative; overflow: hidden; transition: border-color .2s, box-shadow .2s; background: #fff; }
-.service-card:hover { border-color: var(--blue); box-shadow: 0 4px 20px rgba(26,79,196,.09); }
-.service-tag { display: inline-block; background: var(--blue-lt); color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 10px; }
-.service-name { font-weight: 700; font-size: 14px; color: var(--black); margin-bottom: 7px; }
-.service-desc { font-size: 13px; color: var(--gray); line-height: 1.6; }
+.svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.svc { background: #fff; padding: 28px 24px; transition: background .18s; position: relative; }
+.svc:hover { background: var(--paper); }
+.svc-no { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--blue); letter-spacing: 1px; margin-bottom: 14px; display: block; }
+.svc h3 { font-size: 19px; font-weight: 700; color: var(--ink); margin-bottom: 7px; line-height: 1.1; }
+.svc p { font-size: 13.5px; color: var(--gray); line-height: 1.6; }
 
-/* ── WHO WE HELP ── */
-.who-section { background: var(--bg-light); border-top: 1px solid var(--border); }
-.who-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 32px; }
-.who-card { background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--blue); border-radius: 5px; padding: 16px 14px; }
-.who-card-title { font-weight: 700; font-size: 13px; color: var(--black); margin-bottom: 4px; }
-.who-card-sub { font-size: 12px; color: var(--gray-lt); line-height: 1.5; }
+/* ── ABOUT ── */
+.about-grid { display: grid; grid-template-columns: 340px 1fr; gap: 60px; align-items: center; }
+.about-photo { position: relative; }
+.about-photo .frame { background: linear-gradient(160deg, #e7e4dd, #d9d5cc); border-radius: 14px; aspect-ratio: 4/5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+.about-photo .frame span { font-size: 12px; font-weight: 600; color: #9a978d; letter-spacing: .3px; }
+.about-namecard { position: absolute; left: 22px; bottom: 22px; right: 22px; background: var(--ink); border-radius: 10px; padding: 16px 18px; box-shadow: 0 14px 34px rgba(0,0,0,.25); }
+.about-namecard strong { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: #fff; display: block; letter-spacing: .02em; }
+.about-namecard span { font-size: 12px; font-weight: 600; color: var(--sky); letter-spacing: .5px; }
+.about-body p { font-size: 16.5px; color: #3f3e38; line-height: 1.8; margin-bottom: 18px; }
+.about-body p strong { color: var(--ink); font-weight: 700; }
+.about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.about-tags span { font-size: 12px; font-weight: 700; color: var(--blue); background: #fff; border: 1px solid var(--line-d); border-radius: 30px; padding: 7px 15px; }
+
+/* ── WHO WE HELP (compact band) ── */
+.who { background: var(--ink); color: #fff; padding: 60px 32px; }
+.who-inner { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; gap: 50px; align-items: center; }
+.who h2 { font-size: 32px; font-weight: 800; color: #fff; line-height: 1.05; }
+.who h2 + p { font-size: 14px; color: rgba(255,255,255,.55); margin-top: 10px; }
+.who-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.who-list span { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.85); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 11px 17px; transition: background .15s; }
+.who-list span:hover { background: rgba(255,255,255,.12); }
 
 /* ── EQUIPMENT ── */
-.equipment-section { border-top: 1px solid var(--border); }
-.equipment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 32px; }
-.equip-item { background: var(--bg-off); border: 1px solid var(--border); border-left: 3px solid var(--blue); border-radius: 4px; padding: 12px 14px; font-size: 13px; font-weight: 600; color: var(--black); }
+.equip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.equip-grid span { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line-d); border-radius: 8px; padding: 12px 18px; }
+.equip-grid span::before { content: ''; width: 6px; height: 6px; border-radius: 1px; background: var(--blue); transform: rotate(45deg); }
 
 /* ── RECENT WORK ── */
-.work-section { background: var(--bg-off); border-top: 1px solid var(--border); }
-.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
-.work-card { border: 1px solid var(--border); border-radius: 7px; overflow: hidden; background: #fff; }
-.work-img-placeholder { background: linear-gradient(135deg, #dce5ef 0%, #c8d8e8 100%); aspect-ratio: 16/10; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
-.work-img-label { font-size: 11px; font-weight: 600; color: #7a8ba8; letter-spacing: .5px; }
-.work-body { padding: 18px 16px; }
-.work-title { font-weight: 700; font-size: 14px; color: var(--black); margin-bottom: 6px; }
-.work-desc { font-size: 13px; color: var(--gray); line-height: 1.6; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.work { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; transition: transform .18s, box-shadow .18s; }
+.work:hover { transform: translateY(-3px); box-shadow: 0 16px 36px -16px rgba(0,0,0,.22); }
+.work-img { aspect-ratio: 3/2; background: linear-gradient(150deg, #e7e4dd, #d6d2c8); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; }
+.work-img span { font-size: 11px; font-weight: 600; color: #9a978d; letter-spacing: .4px; }
+.work-body { padding: 20px 20px 22px; }
+.work-body .tag { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); }
+.work-body h3 { font-size: 19px; font-weight: 700; color: var(--ink); margin: 7px 0 8px; line-height: 1.1; }
+.work-body p { font-size: 13.5px; color: var(--gray); line-height: 1.6; }
 
 /* ── PROCESS ── */
-.process-section { border-top: 1px solid var(--border); }
-.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 48px; position: relative; }
-.process-grid::before { content: ''; position: absolute; top: 26px; left: calc(33% + 16px); right: calc(33% + 16px); height: 2px; background: var(--border); }
-.process-step { }
-.process-num-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-.process-num { width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; z-index: 1; }
-.process-title { font-weight: 700; font-size: 16px; color: var(--black); margin-bottom: 8px; }
-.process-desc { font-size: 14px; color: var(--gray); line-height: 1.7; }
+.proc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; position: relative; }
+.proc-grid::before { content: ''; position: absolute; top: 27px; left: 16%; right: 16%; height: 2px; background: repeating-linear-gradient(90deg, var(--line-d) 0 8px, transparent 8px 16px); }
+.proc { position: relative; }
+.proc .num { width: 56px; height: 56px; border-radius: 50%; background: var(--blue); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; position: relative; z-index: 1; box-shadow: 0 8px 20px -6px rgba(26,79,196,.5); }
+.proc h3 { font-size: 21px; font-weight: 700; color: var(--ink); margin-bottom: 9px; }
+.proc p { font-size: 15px; color: var(--gray); line-height: 1.7; }
 
 /* ── SERVICE AREA ── */
-.area-band { background: var(--blue-dark); padding: 64px 40px; }
-.area-band .section-label { color: var(--blue-sky); }
-.area-band .section-h2 { color: #fff; margin-bottom: 16px; }
-.area-copy { font-size: 15px; color: rgba(255,255,255,.7); line-height: 1.8; max-width: 600px; margin-bottom: 28px; }
+.area { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+.area::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0); background-size: 30px 30px; }
+.area-inner { max-width: 1180px; margin: 0 auto; padding: 80px 32px; position: relative; z-index: 1; max-width: 760px; }
+.area .eyebrow { color: var(--sky); }
+.area .eyebrow::before { background: var(--sky); }
+.area h2 { font-size: 40px; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.04; }
+.area p { font-size: 16px; color: rgba(255,255,255,.74); line-height: 1.75; margin-bottom: 26px; }
 .area-cities { display: flex; flex-wrap: wrap; gap: 8px; }
-.area-city { display: inline-block; padding: 6px 14px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.17); border-radius: 3px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,.75); }
+.area-cities span { font-size: 13px; font-weight: 600; color: rgba(255,255,255,.8); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 6px; padding: 8px 15px; }
 
 /* ── QUOTE / CONTACT ── */
-.quote-section { background: var(--bg-light); padding: 72px 40px; border-top: 3px solid var(--blue); }
-.form-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 52px; align-items: start; margin-top: 14px; }
-.form-pitch { font-size: 15px; color: #444; line-height: 1.85; margin-bottom: 28px; }
-.form-contact-methods { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
-.form-contact-method { display: flex; align-items: center; gap: 12px; padding: 13px 16px; background: #fff; border: 1px solid var(--border); border-radius: 6px; text-decoration: none; transition: border-color .15s; }
-.form-contact-method:hover { border-color: var(--blue); }
-.form-contact-method-text strong { font-size: 14px; font-weight: 700; color: var(--black); display: block; }
-.form-contact-method-text span { font-size: 12px; color: var(--gray-lt); }
-.form-social { margin-top: 20px; }
-.form-social p { font-size: 12px; font-weight: 700; color: #888; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 10px; }
-.form-social-links { display: flex; gap: 10px; }
-.form-social-link { display: flex; align-items: center; gap: 7px; padding: 8px 14px; background: #fff; border: 1px solid var(--border); border-radius: 5px; font-size: 13px; font-weight: 600; color: var(--black); text-decoration: none; transition: border-color .15s; }
-.form-social-link:hover { border-color: var(--blue); color: var(--blue); }
-.form-card { background: #fff; border: 1px solid #dce3f5; border-radius: 8px; padding: 30px 26px; }
-.form-card-title { font-weight: 700; font-size: 17px; color: var(--black); margin-bottom: 20px; }
-.field-group { display: flex; flex-direction: column; gap: 13px; }
-.field { display: flex; flex-direction: column; gap: 4px; }
-.field label { font-size: 11px; font-weight: 700; color: #444; letter-spacing: .5px; text-transform: uppercase; }
-.field input, .field select, .field textarea { border: 1px solid #d0d5e0; border-radius: 4px; padding: 10px 12px; font-size: 14px; color: var(--black); background: #fff; font-family: inherit; outline: none; transition: border-color .15s; width: 100%; -webkit-appearance: none; }
-.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); }
-.field textarea { resize: vertical; min-height: 84px; }
-.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.submit-btn { width: 100%; background: var(--blue); color: #fff; padding: 14px; border: none; border-radius: 4px; font-size: 14px; font-weight: 700; cursor: pointer; letter-spacing: .4px; margin-top: 18px; font-family: inherit; transition: background .15s; }
-.submit-btn:hover { background: var(--blue-mid); }
-.form-note { font-size: 11px; color: #999; text-align: center; margin-top: 10px; }
-.form-success { display: none; background: var(--blue-lt); border: 1px solid var(--blue); border-radius: 6px; padding: 32px; text-align: center; }
-.form-success-icon { font-size: 36px; color: var(--blue); font-weight: 700; margin-bottom: 10px; }
-.form-success p { font-size: 15px; color: var(--black); font-weight: 700; margin-bottom: 5px; }
-.form-success small { font-size: 13px; color: #555; }
+.quote { background: var(--paper); border-top: 1px solid var(--line); }
+.quote-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 64px; align-items: start; }
+.quote-info .lead { margin: 16px 0 30px; }
+.contact-card { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; text-decoration: none; margin-bottom: 12px; transition: border-color .15s, transform .15s; }
+.contact-card:hover { border-color: var(--blue); transform: translateX(2px); }
+.contact-card .ic { width: 42px; height: 42px; border-radius: 9px; background: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-card .tx strong { display: block; font-size: 15px; font-weight: 700; color: var(--ink); }
+.contact-card .tx span { font-size: 13px; color: var(--gray-lt); }
+.social-row { display: flex; gap: 10px; margin-top: 22px; }
+.social-row a { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px; text-decoration: none; transition: all .15s; }
+.social-row a:hover { border-color: var(--blue); color: var(--blue); }
+
+.form-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 34px 30px; box-shadow: 0 24px 50px -28px rgba(0,0,0,.2); }
+.form-card h3 { font-size: 23px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.form-card .sub { font-size: 13.5px; color: var(--gray-lt); margin-bottom: 22px; }
+.fg { display: flex; flex-direction: column; gap: 14px; }
+.f { display: flex; flex-direction: column; gap: 6px; }
+.f label { font-size: 11px; font-weight: 700; color: #4a493f; letter-spacing: .4px; text-transform: uppercase; }
+.f input, .f select, .f textarea { border: 1px solid var(--line-d); border-radius: 7px; padding: 11px 13px; font-size: 14.5px; color: var(--ink); background: #fff; font-family: inherit; outline: none; transition: border-color .15s, box-shadow .15s; width: 100%; -webkit-appearance: none; }
+.f input:focus, .f select:focus, .f textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,79,196,.1); }
+.f textarea { resize: vertical; min-height: 90px; }
+.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-card .btn { width: 100%; margin-top: 22px; padding: 15px; }
+.form-note { font-size: 11.5px; color: var(--gray-lt); text-align: center; margin-top: 12px; }
+.form-ok { display: none; text-align: center; padding: 40px 20px; }
+.form-ok .check { width: 56px; height: 56px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.form-ok h3 { font-size: 22px; margin-bottom: 8px; }
+.form-ok p { font-size: 14px; color: var(--gray); }
 
 /* ── FOOTER ── */
-footer { background: #111; padding: 52px 40px 32px; }
-.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.09); margin-bottom: 24px; }
-.footer-brand-name { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800; color: var(--blue-sky); letter-spacing: 1px; margin-bottom: 4px; }
-.footer-brand-sub { font-size: 12px; color: rgba(255,255,255,.38); margin-bottom: 16px; line-height: 1.5; }
-.footer-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 18px; }
-.footer-badge { font-size: 10px; font-weight: 700; color: rgba(255,255,255,.45); background: rgba(255,255,255,.07); border-radius: 3px; padding: 3px 9px; }
-.footer-social { display: flex; gap: 8px; }
-.footer-social-icon { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 4px; background: rgba(255,255,255,.08); transition: background .15s; text-decoration: none; }
-.footer-social-icon:hover { background: rgba(255,255,255,.18); }
-.footer-col-title { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 14px; }
-.footer-col-links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.footer-col-links a { font-size: 13px; color: rgba(255,255,255,.48); text-decoration: none; transition: color .15s; }
-.footer-col-links a:hover { color: rgba(255,255,255,.9); }
-.footer-contact-item { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 12px; }
-.footer-contact-info strong { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.75); display: block; }
-.footer-contact-info span { font-size: 12px; color: rgba(255,255,255,.35); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.footer-copy { font-size: 11px; color: rgba(255,255,255,.2); }
-.footer-area-note { font-size: 11px; color: rgba(255,255,255,.2); text-align: right; }
+footer { background: var(--ink); color: #fff; }
+.foot-top { max-width: 1180px; margin: 0 auto; padding: 60px 32px 40px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr; gap: 44px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.foot-logo { height: 64px; width: auto; margin-bottom: 16px; filter: brightness(0) invert(1); opacity: .92; }
+.foot-brand p { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.6; margin-bottom: 16px; max-width: 280px; }
+.foot-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.foot-badges span { font-size: 10px; font-weight: 700; color: rgba(255,255,255,.55); background: rgba(255,255,255,.07); border-radius: 4px; padding: 4px 10px; letter-spacing: .3px; }
+.foot-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.32); margin-bottom: 16px; }
+.foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.foot-col a { font-size: 13.5px; color: rgba(255,255,255,.5); text-decoration: none; transition: color .15s; }
+.foot-col a:hover { color: #fff; }
+.foot-contact-item { margin-bottom: 14px; }
+.foot-contact-item strong { display: block; font-size: 14px; font-weight: 700; }
+.foot-contact-item strong a { color: rgba(255,255,255,.82); text-decoration: none; }
+.foot-contact-item span { font-size: 12px; color: rgba(255,255,255,.38); }
+.foot-social { display: flex; gap: 8px; margin-top: 16px; }
+.foot-social a { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; transition: background .15s; }
+.foot-social a:hover { background: var(--blue); }
+.foot-bottom { max-width: 1180px; margin: 0 auto; padding: 22px 32px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.foot-bottom p { font-size: 12px; color: rgba(255,255,255,.3); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-  .hero-layout { grid-template-columns: 1fr 340px; gap: 36px; }
-  .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .hero h1 { font-size: 50px; }
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .foot-top { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
-@media (max-width: 900px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .who-grid { grid-template-columns: repeat(2, 1fr); }
-  .equipment-grid { grid-template-columns: repeat(3, 1fr); }
-  .work-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-grid::before { display: none; }
+@media (max-width: 860px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 44px; padding: 64px 24px 72px; }
+  .hero-panel { max-width: 420px; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about-photo { max-width: 340px; }
+  .who-inner { grid-template-columns: 1fr; gap: 24px; }
+  .work-grid { grid-template-columns: 1fr 1fr; }
+  .quote-grid { grid-template-columns: 1fr; gap: 40px; }
 }
-@media (max-width: 768px) {
-  nav { padding: 10px 20px; }
-  .nav-center { display: none; }
-  .nav-phone span { display: none; }
-  section { padding: 52px 20px; }
-  .hero { padding: 52px 20px 56px; }
-  .hero-layout { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 40px; }
-  .hero-visual { display: none; }
-  .contact-strip { padding: 14px 20px; gap: 20px; }
-  .about-layout { grid-template-columns: 1fr; gap: 28px; }
-  .photo-placeholder { aspect-ratio: 3/2; max-width: 280px; }
-  .services-grid { grid-template-columns: 1fr; }
-  .who-grid { grid-template-columns: 1fr 1fr; }
-  .equipment-grid { grid-template-columns: 1fr 1fr; }
+@media (max-width: 680px) {
+  .nav-center, .nav-phone span { display: none; }
+  .nav-inner { padding: 10px 20px; }
+  .sec { padding: 64px 22px; }
+  .hero h1 { font-size: 42px; }
+  .h2, .area h2 { font-size: 34px; }
+  .tstrip { flex: 0 0 50%; border-bottom: 1px solid var(--line); }
+  .tstrip:nth-child(odd) { border-right: 1px solid var(--line); }
+  .tstrip:nth-child(even) { border-right: none; }
+  .tstrip:last-child { flex-basis: 100%; border-bottom: none; }
+  .svc-grid { grid-template-columns: 1fr; }
   .work-grid { grid-template-columns: 1fr; }
-  .process-grid { grid-template-columns: 1fr; gap: 28px; }
-  .area-band { padding: 52px 20px; }
-  .quote-section { padding: 52px 20px; }
-  .form-layout { grid-template-columns: 1fr; gap: 32px; }
-  footer { padding: 40px 20px 24px; }
-  .footer-top { grid-template-columns: 1fr; gap: 28px; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
-  .footer-area-note { text-align: left; }
-}
-@media (max-width: 480px) {
-  .who-grid { grid-template-columns: 1fr; }
-  .tbar-item { border-right: none; border-bottom: 1px solid var(--border); flex: 0 0 100%; justify-content: center; }
-  .tbar-item:last-child { border-bottom: none; }
+  .proc-grid { grid-template-columns: 1fr; gap: 34px; }
+  .proc-grid::before { display: none; }
+  .who, .area-inner { padding-left: 22px; padding-right: 22px; }
+  .foot-top { grid-template-columns: 1fr; gap: 30px; padding: 48px 22px 32px; }
+  .foot-bottom { padding: 20px 22px; }
 }
 </style>
 </head>
@@ -260,361 +261,327 @@ footer { background: #111; padding: 52px 40px 32px; }
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">
-    <img src="./logo.png" alt="Grizzy Field Solutions LLC" onerror="this.style.display='none';document.getElementById('nav-fallback').style.display='block'">
-    <span id="nav-fallback" class="nav-logo-fallback">GRIZZY <span>FIELD SOLUTIONS</span></span>
-  </a>
-  <div class="nav-center">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#service-area">Service Area</a>
-  </div>
-  <div class="nav-right">
-    <a href="tel:+13525550100" class="nav-phone">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h2.5l1 3L5 6.5C5.8 8.2 7.8 10.2 9.5 11l1.5-1.5 3 1V13C14 13.6 13.6 14 13 14 6.4 14 2 9.6 2 3c0-.6.4-1 1-1Z" fill="#1A4FC4"/></svg>
-      <span>(352) 555-0100</span>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <img src="./logo.png" alt="Grizzy Field Solutions LLC" onerror="this.style.display='none';document.getElementById('navfb').style.display='block'">
+      <span id="navfb" class="nav-logo-fallback">GRIZZY FIELD SOLUTIONS</span>
     </a>
-    <a href="#quote" class="btn-nav">Free Estimate</a>
+    <div class="nav-center">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#area">Service Area</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:+13525550100" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h2.5l1 3L5 6.5C5.8 8.2 7.8 10.2 9.5 11l1.5-1.5 3 1V13C14 13.6 13.6 14 13 14 6.4 14 2 9.6 2 3c0-.6.4-1 1-1Z" fill="#1A4FC4"/></svg>
+        <span>(352) 555-0100</span>
+      </a>
+      <a href="#quote" class="btn btn-blue btn-sm">Free Estimate</a>
+    </div>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-layout">
+  <div class="hero-inner">
     <div>
-      <p class="hero-eyebrow">Veteran-Owned &nbsp;&bull;&nbsp; Licensed &amp; Insured &nbsp;&bull;&nbsp; Gainesville, FL</p>
-      <h1>Professional Land Clearing &amp; Site Prep in North Central Florida</h1>
-      <p class="hero-sub">We serve Gainesville and surrounding communities with land clearing, forestry mulching, brush removal, grading, driveway clearing, pasture cleanup, and site preparation.</p>
-      <div class="hero-ctas">
-        <a href="tel:+13525550100" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h2.5l1 3L5 6.5C5.8 8.2 7.8 10.2 9.5 11l1.5-1.5 3 1V13C14 13.6 13.6 14 13 14 6.4 14 2 9.6 2 3c0-.6.4-1 1-1Z" fill="#1A4FC4"/></svg>
-          Call (352) 555-0100
+      <span class="eyebrow">Veteran-Owned &middot; Gainesville, Florida</span>
+      <h1>Land Clearing &amp; Site Prep, <span class="accent">Done Right.</span></h1>
+      <p class="hero-sub">Owner-operated land clearing, forestry mulching, grading, and cleanup for property owners, contractors, and landowners across North Central Florida.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-light btn-lg">Request a Free Estimate</a>
+        <a href="tel:+13525550100" class="btn btn-ghost btn-lg">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h2.5l1 3L5 6.5C5.8 8.2 7.8 10.2 9.5 11l1.5-1.5 3 1V13C14 13.6 13.6 14 13 14 6.4 14 2 9.6 2 3c0-.6.4-1 1-1Z" fill="#fff"/></svg>
+          (352) 555-0100
         </a>
-        <a href="#quote" class="btn-outline">Request a Free Estimate</a>
       </div>
-      <p class="hero-trust-line">Veteran-owned &nbsp;&bull;&nbsp; Family-owned &nbsp;&bull;&nbsp; Licensed &amp; insured &nbsp;&bull;&nbsp; Owner-operated</p>
+      <div class="hero-trust">
+        <span>Veteran-Owned</span>
+        <span>Family-Owned</span>
+        <span>Licensed &amp; Insured</span>
+        <span>Owner-Operated</span>
+      </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-img-frame">
-        <svg width="72" height="72" viewBox="0 0 72 72" fill="none"><rect x="4" y="20" width="64" height="40" rx="3" stroke="white" stroke-width="2"/><circle cx="20" cy="60" r="8" stroke="white" stroke-width="2"/><circle cx="52" cy="60" r="8" stroke="white" stroke-width="2"/><rect x="36" y="28" width="20" height="14" rx="2" stroke="white" stroke-width="2"/><path d="M4 44h64" stroke="white" stroke-width="1.5"/><path d="M4 36h14" stroke="white" stroke-width="1.5"/></svg>
-        <span class="hero-img-label">Add equipment or job-site photo</span>
+    <div class="hero-panel">
+      <div class="hero-status"><span class="dot"></span><span>Now Booking</span></div>
+      <img class="hero-panel-logo" src="./logo.png" alt="Grizzy Field Solutions LLC logo" onerror="this.style.display='none'">
+      <div class="hero-panel-cap">
+        <strong>Free On-Site Estimates</strong>
+        <span>Gainesville &amp; North Central Florida</span>
       </div>
-      <div class="hero-card">
-        <div class="hero-card-dot"></div>
-        <div class="hero-card-text">
-          Free on-site estimates
-          <span>Gainesville &amp; surrounding areas</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="tstrip"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L3 5.2v4.8c0 3.7 3 6.9 7 8 4-1.1 7-4.3 7-8V5.2L10 2Z" fill="#1A4FC4"/><path d="M7 10l2 2 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veteran-Owned</span></div>
+    <div class="tstrip"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="2.6" fill="#1A4FC4"/><circle cx="5.2" cy="8" r="1.9" fill="#1A4FC4" opacity=".55"/><circle cx="14.8" cy="8" r="1.9" fill="#1A4FC4" opacity=".55"/><path d="M2.5 16.5c0-3.3 3.3-6 7.5-6s7.5 2.7 7.5 6" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/></svg><span>Family-Owned</span></div>
+    <div class="tstrip"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="6" width="14" height="10" rx="1.5" stroke="#1A4FC4" stroke-width="1.6"/><path d="M7 6V5a3 3 0 0 1 6 0v1" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/><path d="M3 10h14" stroke="#1A4FC4" stroke-width="1.3"/></svg><span>Licensed &amp; Insured</span></div>
+    <div class="tstrip"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" fill="#1A4FC4"/><path d="M4 17c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/></svg><span>Owner-Operated</span></div>
+    <div class="tstrip"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.2 6h6.3l-5.1 3.7 2 6L10 14l-5.4 3.7 2-6L1.5 8h6.3L10 2Z" fill="#1A4FC4"/></svg><span>Free Estimates</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="h2">Land Clearing &amp; Site Services</h2>
+      <p class="lead">From overgrown lots to finished site prep, we help you open up, clean up, and get your property ready for what's next.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><span class="svc-no">01</span><h3>Land Clearing</h3><p>Brush, small trees, and overgrowth cleared for usable, accessible land.</p></div>
+      <div class="svc"><span class="svc-no">02</span><h3>Forestry Mulching</h3><p>Thick vegetation reduced to natural mulch in a single pass.</p></div>
+      <div class="svc"><span class="svc-no">03</span><h3>Brush Removal</h3><p>Heavy brush, vines, and overgrowth removed and cleaned up.</p></div>
+      <div class="svc"><span class="svc-no">04</span><h3>Tree &amp; Vegetation Clearing</h3><p>Small trees and saplings cleared as part of larger cleanup.</p></div>
+      <div class="svc"><span class="svc-no">05</span><h3>Site Prep &amp; Grading</h3><p>Ground prepped and leveled for homesites, driveways, and builds.</p></div>
+      <div class="svc"><span class="svc-no">06</span><h3>Driveway &amp; Access</h3><p>Driveways, trails, and entry points opened up and cleared.</p></div>
+      <div class="svc"><span class="svc-no">07</span><h3>Pasture &amp; Field Cleanup</h3><p>Fields, fence lines, and pasture restored to usable shape.</p></div>
+      <div class="svc"><span class="svc-no">08</span><h3>Stump Grinding</h3><p>Unwanted stumps ground down and removed from the site.</p></div>
+      <div class="svc"><span class="svc-no">09</span><h3>Debris Hauling</h3><p>Brush, debris, and cleared material hauled off when needed.</p></div>
+      <div class="svc"><span class="svc-no">10</span><h3>Dirt &amp; Tractor Work</h3><p>Grading support and equipment-based property improvements.</p></div>
+      <div class="svc"><span class="svc-no">11</span><h3>Storm Cleanup</h3><p>Fallen trees and storm debris cleared when it fits our scope.</p></div>
+      <div class="svc"><span class="svc-no">12</span><h3>Skid Steer Work</h3><p>The right machine matched to clearing, access, and prep jobs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec sec-paper" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="frame">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none"><rect x="5" y="9" width="36" height="28" rx="3" stroke="#9a978d" stroke-width="2"/><circle cx="23" cy="23" r="7" stroke="#9a978d" stroke-width="2"/><circle cx="34" cy="14" r="2.4" fill="#9a978d"/></svg>
+          <span>Add photo of Bryce on the job</span>
+        </div>
+        <div class="about-namecard">
+          <strong>Bryce Griswell</strong>
+          <span>FOUNDER &amp; OWNER &middot; U.S. VETERAN</span>
+        </div>
+      </div>
+      <div class="about-body">
+        <span class="eyebrow">About the Company</span>
+        <h2 class="h2" style="margin-bottom:22px">Veteran-Owned.<br>Owner-Operated.</h2>
+        <p>Grizzy Field Solutions is owner-operated by <strong>Bryce Griswell</strong>, a veteran who has spent his life around land, equipment, and hard work. He built the company around what he knows best &mdash; clearing land, improving access, and getting properties ready to use.</p>
+        <p>We keep it straightforward: clear communication, dependable work, and the right equipment for the job. From a single residential lot to acres of overgrowth, we handle it from first estimate to finished site.</p>
+        <div class="about-tags">
+          <span>Veteran-Owned</span>
+          <span>Family-Owned</span>
+          <span>Licensed &amp; Insured</span>
+          <span>Registered in Florida</span>
+          <span>Based in Gainesville</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT STRIP -->
-<div class="contact-strip">
-  <a href="tel:+13525550100" class="cstrip-item">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3h3.5l1.5 4L7 8.5C8 10.8 11.2 14 13.5 15l1.5-2 4 1.5V18C19 18.8 18.8 19 18 19 8.6 19 1 11.4 1 2c0-.8.2-1 1-1H4Z" fill="white"/></svg>
-    <div class="cstrip-label">
-      <small>Call Us</small>
-      (352) 555-0100
-    </div>
-  </a>
-  <div class="cstrip-divider"></div>
-  <a href="mailto:info@grizzyfieldsolutions.com" class="cstrip-item">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="1.5" stroke="white" stroke-width="1.8"/><path d="M2 5.5L10 11.5L18 5.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
-    <div class="cstrip-label">
-      <small>Email Us</small>
-      info@grizzyfieldsolutions.com
-    </div>
-  </a>
-  <div class="cstrip-divider"></div>
-  <div class="cstrip-item">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="1.8"/><path d="M10 6V10L13 13" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
-    <div class="cstrip-label">
-      <small>Response Time</small>
-      Within 24 Hours
-    </div>
-  </div>
-  <div class="cstrip-divider"></div>
-  <div class="social-strip">
-    <a href="https://facebook.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 2H3C2.4 2 2 2.4 2 3V15C2 15.6 2.4 16 3 16H9.6V10.8H7.8V8.6H9.6V7.1C9.6 5.3 10.7 4.3 12.3 4.3C13.1 4.3 13.9 4.4 14.6 4.5V6.4H13.5C12.6 6.4 12.4 6.8 12.4 7.4V8.6H14.5L14.2 10.8H12.4V16H15C15.6 16 16 15.6 16 15V3C16 2.4 15.6 2 15 2Z" fill="white"/></svg>
-    </a>
-    <a href="https://instagram.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="4" stroke="white" stroke-width="1.8"/><circle cx="9" cy="9" r="3.5" stroke="white" stroke-width="1.8"/><circle cx="13.5" cy="4.5" r="1" fill="white"/></svg>
-    </a>
-  </div>
-</div>
-
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="tbar-item">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5L2 5V10C2 13.5 5.1 16.7 9 17.9C12.9 16.7 16 13.5 16 10V5L9 1.5Z" fill="#1A4FC4"/><path d="M6.5 9.5L8 11L11.5 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <span class="tbar-label">Veteran-Owned</span>
-  </div>
-  <div class="tbar-item">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6.5" r="2.5" fill="#1A4FC4"/><circle cx="4.5" cy="7.5" r="1.8" fill="#1A4FC4" opacity=".55"/><circle cx="13.5" cy="7.5" r="1.8" fill="#1A4FC4" opacity=".55"/><path d="M2 16C2 12.7 5.1 10 9 10C12.9 10 16 12.7 16 16" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/></svg>
-    <span class="tbar-label">Family-Owned</span>
-  </div>
-  <div class="tbar-item">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="5" width="14" height="10" rx="1.5" stroke="#1A4FC4" stroke-width="1.6"/><path d="M6 5V4.5C6 3.4 6.9 2.5 8 2.5H10C11.1 2.5 12 3.4 12 4.5V5" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/><path d="M2 9H16" stroke="#1A4FC4" stroke-width="1.3"/></svg>
-    <span class="tbar-label">Licensed &amp; Insured</span>
-  </div>
-  <div class="tbar-item">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6.5" r="3" fill="#1A4FC4"/><path d="M3.5 16C3.5 13 6 11 9 11C12 11 14.5 13 14.5 16" stroke="#1A4FC4" stroke-width="1.6" stroke-linecap="round"/></svg>
-    <span class="tbar-label">Owner-Operated</span>
-  </div>
-  <div class="tbar-item">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1L11 6.5H17L12.5 9.5L14.5 15L9 11.5L3.5 15L5.5 9.5L1 6.5H7L9 1Z" fill="#1A4FC4"/></svg>
-    <span class="tbar-label">Free Estimates</span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section class="about-section" id="about">
-  <p class="section-label">About the Company</p>
-  <h2 class="section-h2">Built on Experience, Work Ethic,<br>and Reliable Equipment</h2>
-  <div class="about-layout">
-    <div class="photo-block">
-      <div class="photo-placeholder">
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><rect x="4" y="8" width="36" height="28" rx="3" stroke="#7a8ba8" stroke-width="2"/><circle cx="22" cy="22" r="7" stroke="#7a8ba8" stroke-width="2"/><circle cx="33" cy="13" r="2.5" fill="#7a8ba8"/></svg>
-        <span class="photo-placeholder-text">Add photo of Bryce on job site</span>
-      </div>
-      <div class="owner-name-block">
-        <strong>Bryce Griswell</strong>
-        <span>Founder &amp; Owner &nbsp;&bull;&nbsp; U.S. Veteran</span>
-      </div>
-    </div>
-    <div class="about-text">
-      <p>Grizzy Field Solutions LLC is owner-operated by Bryce Griswell, a veteran with hands-on experience working with land, equipment, and property solutions. Bryce has spent much of his life around this kind of work, and he built this company around what he knows best: clearing land, improving access, preparing properties, and helping customers get their projects moving.</p>
-      <p>As an owner-operated business, we focus on clear communication, dependable work, and practical solutions. Whether the job is a residential lot, a rural property, a field, a driveway, a contractor project, or commercial land, our goal is to make the process straightforward from estimate to completion.</p>
-      <div class="about-tags">
-        <span class="about-tag">Veteran-Owned</span>
-        <span class="about-tag">Family-Owned</span>
-        <span class="about-tag">Licensed &amp; Insured</span>
-        <span class="about-tag">Owner-Operated</span>
-        <span class="about-tag">Registered in Florida</span>
-        <span class="about-tag">Gainesville, FL</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services-section" id="services">
-  <p class="section-label">What We Do</p>
-  <h2 class="section-h2">Land Clearing &amp; Site Services</h2>
-  <p class="section-sub">From overgrown lots to site preparation, we help property owners, contractors, and landowners open up, clean up, and prepare their land for what comes next.</p>
-  <div class="services-grid">
-    <div class="service-card"><span class="service-tag">Clearing</span><div class="service-name">Land Clearing</div><div class="service-desc">Clear overgrown lots, brush, small trees, and unwanted vegetation so your property is easier to access, maintain, and use.</div></div>
-    <div class="service-card"><span class="service-tag">Mulching</span><div class="service-name">Forestry Mulching</div><div class="service-desc">Reduce thick vegetation and brush into natural mulch while improving visibility, access, and usability across the property.</div></div>
-    <div class="service-card"><span class="service-tag">Removal</span><div class="service-name">Brush Removal</div><div class="service-desc">Remove heavy brush, vines, overgrowth, and unwanted vegetation from residential, rural, agricultural, and commercial properties.</div></div>
-    <div class="service-card"><span class="service-tag">Clearing</span><div class="service-name">Small Tree &amp; Vegetation Clearing</div><div class="service-desc">Clear small trees, saplings, and vegetation as part of broader land clearing and property cleanup projects.</div></div>
-    <div class="service-card"><span class="service-tag">Site Prep</span><div class="service-name">Site Prep &amp; Grading</div><div class="service-desc">Prepare areas for homesites, driveways, parking, equipment access, and future property improvements.</div></div>
-    <div class="service-card"><span class="service-tag">Access</span><div class="service-name">Driveway &amp; Access Clearing</div><div class="service-desc">Open up driveways, access roads, trails, and entry points so your property is easier to reach and navigate.</div></div>
-    <div class="service-card"><span class="service-tag">Pasture</span><div class="service-name">Pasture &amp; Field Cleanup</div><div class="service-desc">Clean up open land, fields, fence lines, and pasture areas to make the property more usable and manageable.</div></div>
-    <div class="service-card"><span class="service-tag">Grinding</span><div class="service-name">Stump Grinding</div><div class="service-desc">Grind and remove unwanted stumps as part of cleanup, clearing, and property improvement work.</div></div>
-    <div class="service-card"><span class="service-tag">Hauling</span><div class="service-name">Debris Hauling</div><div class="service-desc">Remove brush, debris, and cleared material when the project requires cleanup and hauling support.</div></div>
-    <div class="service-card"><span class="service-tag">Dirt Work</span><div class="service-name">Dirt Work &amp; Tractor Work</div><div class="service-desc">Support property improvements with tractor work, dirt work, grading support, and equipment-based land solutions.</div></div>
-    <div class="service-card"><span class="service-tag">Cleanup</span><div class="service-name">Storm Cleanup</div><div class="service-desc">Help clean up fallen trees, brush, debris, and property damage after storms when the work fits our equipment and scope.</div></div>
-    <div class="service-card"><span class="service-tag">Equipment</span><div class="service-name">Skid Steer &amp; Equipment Work</div><div class="service-desc">Use the right equipment for clearing, cleanup, grading, access, and property preparation projects.</div></div>
-  </div>
-</section>
-
 <!-- WHO WE HELP -->
-<section class="who-section">
-  <p class="section-label">Who We Help</p>
-  <h2 class="section-h2">Who We Help</h2>
-  <p class="section-sub" style="margin-bottom:0">We work with residential, commercial, agricultural, and contractor clients who need land cleared, cleaned up, opened up, or prepared for future use.</p>
-  <div class="who-grid">
-    <div class="who-card"><div class="who-card-title">Homeowners</div><div class="who-card-sub">Residential lot clearing, yard cleanup, and property access</div></div>
-    <div class="who-card"><div class="who-card-title">Rural Landowners</div><div class="who-card-sub">Field cleanup, brush management, and rural property solutions</div></div>
-    <div class="who-card"><div class="who-card-title">Contractors</div><div class="who-card-sub">Site prep, clearing support, and subcontract land work</div></div>
-    <div class="who-card"><div class="who-card-title">Farmers &amp; Pasture Owners</div><div class="who-card-sub">Pasture cleanup, fence line clearing, and agricultural prep</div></div>
-    <div class="who-card"><div class="who-card-title">Commercial Property Owners</div><div class="who-card-sub">Commercial lot clearing, access, and site preparation</div></div>
-    <div class="who-card"><div class="who-card-title">Real Estate Investors</div><div class="who-card-sub">Land clearing for development, rehab, and resale prep</div></div>
-    <div class="who-card"><div class="who-card-title">Homesite Preparation</div><div class="who-card-sub">Clearing and prep for new builds, mobile homes, and additions</div></div>
+<div class="who">
+  <div class="who-inner">
+    <div>
+      <h2>Who We Help</h2>
+      <p>Residential, agricultural, commercial &amp; contractor projects.</p>
+    </div>
+    <div class="who-list">
+      <span>Homeowners</span>
+      <span>Rural Landowners</span>
+      <span>Contractors</span>
+      <span>Farmers &amp; Pasture Owners</span>
+      <span>Commercial Properties</span>
+      <span>Real Estate Investors</span>
+      <span>Homesite Preparation</span>
+    </div>
   </div>
-</section>
+</div>
 
 <!-- EQUIPMENT -->
-<section class="equipment-section">
-  <p class="section-label">Equipment</p>
-  <h2 class="section-h2">Equipment Ready for the Job</h2>
-  <p class="section-sub" style="margin-bottom:32px">Different properties require different tools. We bring the right equipment for clearing, grading, access work, and property preparation.</p>
-  <div class="equipment-grid">
-    <div class="equip-item">Tractor</div>
-    <div class="equip-item">Skid Steer</div>
-    <div class="equip-item">Forestry Mulcher</div>
-    <div class="equip-item">Bush Hog</div>
-    <div class="equip-item">Grapple Bucket</div>
-    <div class="equip-item">Mini Excavator</div>
-    <div class="equip-item">Box Blade</div>
-    <div class="equip-item">Brush Cutter</div>
-    <div class="equip-item">Dump Trailer</div>
-    <div class="equip-item">Trailer</div>
-    <div class="equip-item">Truck</div>
-    <div class="equip-item">Chainsaws</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Equipment</span>
+      <h2 class="h2">Ready for the Job</h2>
+      <p class="lead">Different properties call for different tools &mdash; we bring the equipment the work actually needs.</p>
+    </div>
+    <div class="equip-grid">
+      <span>Tractor</span>
+      <span>Skid Steer</span>
+      <span>Forestry Mulcher</span>
+      <span>Bush Hog</span>
+      <span>Grapple Bucket</span>
+      <span>Mini Excavator</span>
+      <span>Box Blade</span>
+      <span>Brush Cutter</span>
+      <span>Dump Trailer</span>
+      <span>Trailer</span>
+      <span>Truck</span>
+      <span>Chainsaws</span>
+    </div>
   </div>
 </section>
 
 <!-- RECENT WORK -->
-<section class="work-section">
-  <p class="section-label">Recent Work</p>
-  <h2 class="section-h2">Recent Work</h2>
-  <div class="work-grid">
-    <div class="work-card">
-      <div class="work-img-placeholder"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" opacity=".35"><rect x="3" y="7" width="30" height="22" rx="2" stroke="#7a8ba8" stroke-width="2"/><circle cx="18" cy="18" r="6" stroke="#7a8ba8" stroke-width="2"/><circle cx="28" cy="12" r="2" fill="#7a8ba8"/></svg><span class="work-img-label">Add before/after photo</span></div>
-      <div class="work-body"><div class="work-title">Overgrown Lot Clearing &mdash; Gainesville Area</div><div class="work-desc">Clearing brush, small trees, and overgrowth to open up land for better access and future use.</div></div>
+<section class="sec sec-paper" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recent Work</span>
+      <h2 class="h2">Out in the Field</h2>
+      <p class="lead">Project photos are on the way. Here's the kind of work we take on across the area.</p>
     </div>
-    <div class="work-card">
-      <div class="work-img-placeholder"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" opacity=".35"><rect x="3" y="7" width="30" height="22" rx="2" stroke="#7a8ba8" stroke-width="2"/><circle cx="18" cy="18" r="6" stroke="#7a8ba8" stroke-width="2"/><circle cx="28" cy="12" r="2" fill="#7a8ba8"/></svg><span class="work-img-label">Add before/after photo</span></div>
-      <div class="work-body"><div class="work-title">Driveway &amp; Access Clearing &mdash; North Central Florida</div><div class="work-desc">Opening and cleaning access areas so properties are easier to reach, maintain, and improve.</div></div>
-    </div>
-    <div class="work-card">
-      <div class="work-img-placeholder"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" opacity=".35"><rect x="3" y="7" width="30" height="22" rx="2" stroke="#7a8ba8" stroke-width="2"/><circle cx="18" cy="18" r="6" stroke="#7a8ba8" stroke-width="2"/><circle cx="28" cy="12" r="2" fill="#7a8ba8"/></svg><span class="work-img-label">Add before/after photo</span></div>
-      <div class="work-body"><div class="work-title">Field &amp; Pasture Cleanup &mdash; Surrounding Communities</div><div class="work-desc">Cleaning up open land, fence lines, and field areas to make rural properties more usable and manageable.</div></div>
+    <div class="work-grid">
+      <div class="work">
+        <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
+        <div class="work-body"><span class="tag">Gainesville Area</span><h3>Overgrown Lot Clearing</h3><p>Brush, small trees, and overgrowth cleared to open up land for access and future use.</p></div>
+      </div>
+      <div class="work">
+        <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
+        <div class="work-body"><span class="tag">North Central FL</span><h3>Driveway &amp; Access Clearing</h3><p>Access areas opened and cleaned so the property is easier to reach and maintain.</p></div>
+      </div>
+      <div class="work">
+        <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
+        <div class="work-body"><span class="tag">Surrounding Areas</span><h3>Field &amp; Pasture Cleanup</h3><p>Open land, fence lines, and fields cleaned up to make rural property usable again.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="process-section">
-  <p class="section-label">How It Works</p>
-  <h2 class="section-h2">Simple, Straightforward Process</h2>
-  <div class="process-grid">
-    <div class="process-step">
-      <div class="process-num-wrap"><div class="process-num">1</div></div>
-      <div class="process-title">Request a Free Estimate</div>
-      <div class="process-desc">Send us the project details, property location, and the type of work you need done. Call, email, or fill out the form.</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow" style="justify-content:center">How It Works</span>
+      <h2 class="h2">A Simple, Straightforward Process</h2>
     </div>
-    <div class="process-step">
-      <div class="process-num-wrap"><div class="process-num">2</div></div>
-      <div class="process-title">Review the Property</div>
-      <div class="process-desc">We review the land, access points, scope of work, vegetation, and equipment needs before providing an estimate.</div>
-    </div>
-    <div class="process-step">
-      <div class="process-num-wrap"><div class="process-num">3</div></div>
-      <div class="process-title">Clear, Clean Up, and Prepare</div>
-      <div class="process-desc">We complete the work with clear communication, reliable equipment, and attention to safety and property conditions.</div>
+    <div class="proc-grid">
+      <div class="proc">
+        <div class="num">1</div>
+        <h3>Request a Free Estimate</h3>
+        <p>Send us the project details, property location, and the type of work you need done.</p>
+      </div>
+      <div class="proc">
+        <div class="num">2</div>
+        <h3>We Review the Property</h3>
+        <p>We look at the land, access, scope, and equipment needs before giving you an estimate.</p>
+      </div>
+      <div class="proc">
+        <div class="num">3</div>
+        <h3>We Get to Work</h3>
+        <p>We clear, clean up, and prepare the property with reliable equipment and clear communication.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SERVICE AREA -->
-<div class="area-band" id="service-area">
-  <p class="section-label">Where We Work</p>
-  <h2 class="section-h2">Serving Gainesville &amp; North Central Florida</h2>
-  <p class="area-copy">Grizzy Field Solutions LLC serves Gainesville, Alachua County, Levy County, Marion County, and surrounding North Central Florida communities — including work within about a 75-mile radius of Gainesville when the job makes sense.</p>
-  <div class="area-cities">
-    <span class="area-city">Gainesville</span>
-    <span class="area-city">Newberry</span>
-    <span class="area-city">Alachua</span>
-    <span class="area-city">High Springs</span>
-    <span class="area-city">Archer</span>
-    <span class="area-city">Bronson</span>
-    <span class="area-city">Williston</span>
-    <span class="area-city">Ocala</span>
-    <span class="area-city">Surrounding Communities</span>
+<section class="area" id="area">
+  <div class="area-inner">
+    <span class="eyebrow">Where We Work</span>
+    <h2>Serving Gainesville &amp; North Central Florida</h2>
+    <p>We serve Gainesville, Alachua County, Levy County, Marion County, and surrounding communities &mdash; including work within about a 75-mile radius of Gainesville when the job makes sense.</p>
+    <div class="area-cities">
+      <span>Gainesville</span>
+      <span>Newberry</span>
+      <span>Alachua</span>
+      <span>High Springs</span>
+      <span>Archer</span>
+      <span>Bronson</span>
+      <span>Williston</span>
+      <span>Ocala</span>
+      <span>&amp; Surrounding Areas</span>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- QUOTE / CONTACT -->
-<section class="quote-section" id="quote">
-  <p class="section-label">Get in Touch</p>
-  <h2 class="section-h2">Request a Free Estimate</h2>
-  <div class="form-layout">
-    <div>
-      <p class="form-pitch">Tell us what you need cleared, where the property is, and when you need it done. We'll review your request and follow up with next steps.</p>
-      <div class="form-contact-methods">
-        <a href="tel:+13525550100" class="form-contact-method">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#EEF3FC"/><path d="M5.5 4.5h3.2l1.3 3.8L8 9.8C8.9 11.8 10.2 13.1 12.2 14L13.7 12l3.8 1.3V16.5C17.5 17.3 17.3 17.5 16.5 17.5 8.5 17.5 4.5 13.5 4.5 5.5c0-.8.2-1 1-1Z" fill="#1A4FC4"/></svg>
-          <div class="form-contact-method-text">
-            <strong>(352) 555-0100</strong>
-            <span>Call or text &mdash; fastest response</span>
-          </div>
+<section class="sec quote" id="quote">
+  <div class="wrap">
+    <div class="quote-grid">
+      <div class="quote-info">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="h2">Request a Free Estimate</h2>
+        <p class="lead">Tell us what you need cleared, where the property is, and your timeline. We'll review it and follow up with next steps.</p>
+        <a href="tel:+13525550100" class="contact-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3h3l1.2 3.6L6.5 8.2c.9 1.9 2.4 3.4 4.3 4.3l1.6-1.7L16 12v3c0 .6-.4 1-1 1C8.4 16 4 11.6 4 5c0-.6.4-1 1-1Z" fill="#fff"/></svg></span>
+          <span class="tx"><strong>(352) 555-0100</strong><span>Call or text &mdash; fastest response</span></span>
         </a>
-        <a href="mailto:info@grizzyfieldsolutions.com" class="form-contact-method">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#EEF3FC"/><rect x="5" y="7" width="12" height="9" rx="1" stroke="#1A4FC4" stroke-width="1.5"/><path d="M5 8L11 12.5L17 8" stroke="#1A4FC4" stroke-width="1.5" stroke-linecap="round"/></svg>
-          <div class="form-contact-method-text">
-            <strong>info@grizzyfieldsolutions.com</strong>
-            <span>Email us with project details</span>
-          </div>
+        <a href="mailto:info@grizzyfieldsolutions.com" class="contact-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="1.5" stroke="#fff" stroke-width="1.6"/><path d="M3 6l7 5 7-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="tx"><strong>info@grizzyfieldsolutions.com</strong><span>Email us your project details</span></span>
         </a>
-      </div>
-      <div class="form-social">
-        <p>Follow us</p>
-        <div class="form-social-links">
-          <a href="https://facebook.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="form-social-link">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 1H2C1.4 1 1 1.4 1 2V14C1 14.6 1.4 15 2 15H8.6V9.8H6.8V7.6H8.6V6.1C8.6 4.3 9.7 3.3 11.3 3.3C12.1 3.3 12.9 3.4 13.6 3.5V5.4H12.5C11.6 5.4 11.4 5.8 11.4 6.4V7.6H13.5L13.2 9.8H11.4V15H14C14.6 15 15 14.6 15 14V2C15 1.4 14.6 1 14 1Z" fill="currentColor"/></svg>
-            Facebook
-          </a>
-          <a href="https://instagram.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="form-social-link">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="4" r="1" fill="currentColor"/></svg>
-            Instagram
-          </a>
+        <div class="social-row">
+          <a href="https://facebook.com/grizzyfieldsolutions" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 1H2C1.4 1 1 1.4 1 2v12c0 .6.4 1 1 1h6.6V9.8H6.8V7.6h1.8V6.1c0-1.8 1.1-2.8 2.7-2.8.8 0 1.6.1 2.3.2v1.9h-1.1c-.9 0-1.1.4-1.1 1v1.2h2.1l-.3 2.2h-1.8V15H14c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1Z" fill="#1A4FC4"/></svg>Facebook</a>
+          <a href="https://instagram.com/grizzyfieldsolutions" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="4" stroke="#1A4FC4" stroke-width="1.5"/><circle cx="8" cy="8" r="3.4" stroke="#1A4FC4" stroke-width="1.5"/><circle cx="12" cy="4" r="1" fill="#1A4FC4"/></svg>Instagram</a>
         </div>
       </div>
-    </div>
-    <div class="form-card">
-      <p class="form-card-title">Tell us about your project</p>
-      <div id="quote-form">
-        <div class="field-group">
-          <div class="field-row">
-            <div class="field"><label>First Name</label><input type="text" id="f-first" placeholder="First name" /></div>
-            <div class="field"><label>Last Name</label><input type="text" id="f-last" placeholder="Last name" /></div>
-          </div>
-          <div class="field"><label>Phone Number</label><input type="tel" id="f-phone" placeholder="Your phone number" /></div>
-          <div class="field"><label>Email Address</label><input type="email" id="f-email" placeholder="Your email address" /></div>
-          <div class="field"><label>Project Location / City</label><input type="text" id="f-location" placeholder="City or general area" /></div>
-          <div class="field"><label>Service Needed</label>
-            <select id="f-service">
-              <option value="">Select a service...</option>
-              <option>Land clearing</option>
-              <option>Forestry mulching</option>
-              <option>Brush removal</option>
-              <option>Small tree &amp; vegetation clearing</option>
-              <option>Site prep &amp; grading</option>
-              <option>Driveway &amp; access clearing</option>
-              <option>Pasture &amp; field cleanup</option>
-              <option>Stump grinding</option>
-              <option>Debris hauling</option>
-              <option>Dirt work &amp; tractor work</option>
-              <option>Storm cleanup</option>
-              <option>Not sure &mdash; need advice</option>
-            </select>
-          </div>
-          <div class="field-row">
-            <div class="field"><label>Approximate Size</label>
-              <select id="f-acres">
-                <option value="">Select size...</option>
-                <option>Under 1 acre</option>
-                <option>1&ndash;5 acres</option>
-                <option>5&ndash;20 acres</option>
-                <option>20&ndash;50 acres</option>
-                <option>50+ acres</option>
-                <option>Not sure</option>
+
+      <div class="form-card">
+        <div id="quote-form">
+          <h3>Tell us about your project</h3>
+          <p class="sub">We respond within 24 hours.</p>
+          <div class="fg">
+            <div class="f-row">
+              <div class="f"><label>First Name</label><input type="text" id="f-first" placeholder="First name"></div>
+              <div class="f"><label>Last Name</label><input type="text" id="f-last" placeholder="Last name"></div>
+            </div>
+            <div class="f-row">
+              <div class="f"><label>Phone</label><input type="tel" id="f-phone" placeholder="Your phone"></div>
+              <div class="f"><label>Email</label><input type="email" id="f-email" placeholder="Your email"></div>
+            </div>
+            <div class="f"><label>Property Location / City</label><input type="text" id="f-location" placeholder="City or general area"></div>
+            <div class="f"><label>Service Needed</label>
+              <select id="f-service">
+                <option value="">Select a service...</option>
+                <option>Land clearing</option>
+                <option>Forestry mulching</option>
+                <option>Brush removal</option>
+                <option>Tree &amp; vegetation clearing</option>
+                <option>Site prep &amp; grading</option>
+                <option>Driveway &amp; access clearing</option>
+                <option>Pasture &amp; field cleanup</option>
+                <option>Stump grinding</option>
+                <option>Debris hauling</option>
+                <option>Dirt &amp; tractor work</option>
+                <option>Storm cleanup</option>
+                <option>Not sure &mdash; need advice</option>
               </select>
             </div>
-            <div class="field"><label>Timeline</label>
-              <select id="f-timeline">
-                <option value="">Select timeline...</option>
-                <option>ASAP</option>
-                <option>1&ndash;2 weeks</option>
-                <option>1 month</option>
-                <option>Planning ahead</option>
-              </select>
+            <div class="f-row">
+              <div class="f"><label>Project Size</label>
+                <select id="f-acres">
+                  <option value="">Select...</option>
+                  <option>Under 1 acre</option>
+                  <option>1&ndash;5 acres</option>
+                  <option>5&ndash;20 acres</option>
+                  <option>20&ndash;50 acres</option>
+                  <option>50+ acres</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+              <div class="f"><label>Timeline</label>
+                <select id="f-timeline">
+                  <option value="">Select...</option>
+                  <option>ASAP</option>
+                  <option>1&ndash;2 weeks</option>
+                  <option>1 month</option>
+                  <option>Planning ahead</option>
+                </select>
+              </div>
             </div>
+            <div class="f"><label>Project Details</label><textarea id="f-notes" placeholder="Describe the work, access, obstacles, or anything else we should know..."></textarea></div>
           </div>
-          <div class="field"><label>Project Details</label><textarea id="f-notes" placeholder="Describe your project, access conditions, obstacles, or anything else we should know..."></textarea></div>
+          <button class="btn btn-blue" onclick="submitQuote()">Send Estimate Request &rarr;</button>
+          <p class="form-note">Your information is never shared.</p>
         </div>
-        <button class="submit-btn" onclick="submitQuote()">Send Estimate Request &rarr;</button>
-        <p class="form-note">We respond within 24 hours &nbsp;&middot;&nbsp; Your info is never shared</p>
-      </div>
-      <div class="form-success" id="form-success">
-        <div class="form-success-icon">&#10003;</div>
-        <p>Estimate request received!</p>
-        <small>We will follow up within 24 hours to discuss your project.</small>
+        <div class="form-ok" id="form-ok">
+          <div class="check"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M6 13.5l4.5 4.5L20 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Request received</h3>
+          <p>Thanks &mdash; we'll review your project and follow up within 24 hours.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -622,69 +589,56 @@ footer { background: #111; padding: 52px 40px 32px; }
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand-name">GRIZZY FIELD SOLUTIONS LLC</div>
-      <div class="footer-brand-sub">Land Clearing &amp; Site Prep<br>Gainesville &amp; North Central Florida</div>
-      <div class="footer-badges">
-        <span class="footer-badge">Veteran-Owned</span>
-        <span class="footer-badge">Family-Owned</span>
-        <span class="footer-badge">Licensed &amp; Insured</span>
-        <span class="footer-badge">Owner-Operated</span>
-      </div>
-      <div style="margin-top:18px">
-        <div class="footer-col-title" style="margin-bottom:10px">Follow Us</div>
-        <div class="footer-social">
-          <a href="https://facebook.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 1H2C1.4 1 1 1.4 1 2V14C1 14.6 1.4 15 2 15H8.6V9.8H6.8V7.6H8.6V6.1C8.6 4.3 9.7 3.3 11.3 3.3C12.1 3.3 12.9 3.4 13.6 3.5V5.4H12.5C11.6 5.4 11.4 5.8 11.4 6.4V7.6H13.5L13.2 9.8H11.4V15H14C14.6 15 15 14.6 15 14V2C15 1.4 14.6 1 14 1Z" fill="white"/></svg>
-          </a>
-          <a href="https://instagram.com/grizzyfieldsolutions" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="4" stroke="white" stroke-width="1.5"/><circle cx="8" cy="8" r="3.5" stroke="white" stroke-width="1.5"/><circle cx="12" cy="4" r="1" fill="white"/></svg>
-          </a>
-        </div>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <img class="foot-logo" src="./logo.png" alt="Grizzy Field Solutions LLC" onerror="this.style.display='none'">
+      <p>Veteran-owned, family-owned land clearing and site prep serving Gainesville and North Central Florida.</p>
+      <div class="foot-badges">
+        <span>Veteran-Owned</span>
+        <span>Family-Owned</span>
+        <span>Licensed &amp; Insured</span>
+        <span>Owner-Operated</span>
       </div>
     </div>
-    <div>
-      <div class="footer-col-title">Services</div>
-      <ul class="footer-col-links">
+    <div class="foot-col">
+      <h4>Services</h4>
+      <ul>
         <li><a href="#services">Land Clearing</a></li>
         <li><a href="#services">Forestry Mulching</a></li>
         <li><a href="#services">Brush Removal</a></li>
         <li><a href="#services">Site Prep &amp; Grading</a></li>
         <li><a href="#services">Driveway Clearing</a></li>
-        <li><a href="#services">Pasture &amp; Field Cleanup</a></li>
         <li><a href="#services">Storm Cleanup</a></li>
       </ul>
     </div>
-    <div>
-      <div class="footer-col-title">Company</div>
-      <ul class="footer-col-links">
-        <li><a href="#about">About Grizzy Field Solutions</a></li>
-        <li><a href="#service-area">Service Area</a></li>
-        <li><a href="#quote">Request a Free Estimate</a></li>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Recent Work</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#quote">Free Estimate</a></li>
       </ul>
     </div>
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <div class="footer-contact-item">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-top:2px;flex-shrink:0"><path d="M3 2h2.5l1 3L5 6.5C5.8 8.2 7.8 10.2 9.5 11l1.5-1.5 3 1V13C14 13.6 13.6 14 13 14 6.4 14 2 9.6 2 3c0-.6.4-1 1-1Z" fill="#7DADF5"/></svg>
-        <div class="footer-contact-info">
-          <strong><a href="tel:+13525550100" style="color:rgba(255,255,255,.75);text-decoration:none">(352) 555-0100</a></strong>
-          <span>Call or text</span>
-        </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <div class="foot-contact-item">
+        <strong><a href="tel:+13525550100">(352) 555-0100</a></strong>
+        <span>Call or text</span>
       </div>
-      <div class="footer-contact-item">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-top:2px;flex-shrink:0"><rect x="1" y="3" width="14" height="10" rx="1.5" stroke="#7DADF5" stroke-width="1.5"/><path d="M1 4.5L8 9.5L15 4.5" stroke="#7DADF5" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <div class="footer-contact-info">
-          <strong><a href="mailto:info@grizzyfieldsolutions.com" style="color:rgba(255,255,255,.75);text-decoration:none;font-size:12px">info@grizzyfieldsolutions.com</a></strong>
-          <span>Email us anytime</span>
-        </div>
+      <div class="foot-contact-item">
+        <strong><a href="mailto:info@grizzyfieldsolutions.com" style="font-size:13px">info@grizzyfieldsolutions.com</a></strong>
+        <span>Email us anytime</span>
+      </div>
+      <div class="foot-social">
+        <a href="https://facebook.com/grizzyfieldsolutions" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 1H2C1.4 1 1 1.4 1 2v12c0 .6.4 1 1 1h6.6V9.8H6.8V7.6h1.8V6.1c0-1.8 1.1-2.8 2.7-2.8.8 0 1.6.1 2.3.2v1.9h-1.1c-.9 0-1.1.4-1.1 1v1.2h2.1l-.3 2.2h-1.8V15H14c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1Z" fill="#fff"/></svg></a>
+        <a href="https://instagram.com/grizzyfieldsolutions" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="4" stroke="#fff" stroke-width="1.5"/><circle cx="8" cy="8" r="3.4" stroke="#fff" stroke-width="1.5"/><circle cx="12" cy="4" r="1" fill="#fff"/></svg></a>
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">&copy; 2026 Grizzy Field Solutions LLC. All rights reserved. Gainesville, Florida.</div>
-    <div class="footer-area-note">Serving Alachua, Levy &amp; Marion Counties and surrounding North Central Florida</div>
+  <div class="foot-bottom">
+    <p>&copy; 2026 Grizzy Field Solutions LLC. All rights reserved.</p>
+    <p>Serving Alachua, Levy &amp; Marion Counties &middot; Gainesville, FL</p>
   </div>
 </footer>
 
@@ -694,11 +648,11 @@ function submitQuote() {
   var phone = document.getElementById("f-phone").value.trim();
   var service = document.getElementById("f-service").value;
   if (!first || !phone || !service) {
-    alert("Please fill in your name, phone number, and service type to continue.");
+    alert("Please add your name, phone number, and the service you need so we can follow up.");
     return;
   }
   document.getElementById("quote-form").style.display = "none";
-  document.getElementById("form-success").style.display = "block";
+  document.getElementById("form-ok").style.display = "block";
 }
 </script>
 </body>
