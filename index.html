@@ -38,7 +38,6 @@ body { font-family: 'Inter', sans-serif; color: var(--ink); background: var(--wh
 .wrap { max-width: 1180px; margin: 0 auto; }
 h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; letter-spacing: -.01em; }
 
-/* shared eyebrow */
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; }
 .eyebrow::before { content: ''; width: 26px; height: 2px; background: var(--blue); display: inline-block; }
 .h2 { font-size: 42px; font-weight: 800; line-height: 1.02; color: var(--ink); }
@@ -46,9 +45,9 @@ h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; letter-spacing: -.01em
 
 /* ── NAV ── */
 nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 32px; gap: 20px; }
+.nav-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 11px 32px; gap: 20px; }
 .nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-.nav-logo img { height: 50px; width: auto; display: block; }
+.nav-logo img { height: 64px; width: auto; display: block; }
 .nav-logo-fallback { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--blue); letter-spacing: .5px; display: none; }
 .nav-center { display: flex; gap: 28px; align-items: center; }
 .nav-center a { font-size: 14px; font-weight: 600; color: #44433d; text-decoration: none; transition: color .15s; }
@@ -65,13 +64,11 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
 .btn-light { background: #fff; color: var(--navy); }
 .btn-light:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,.18); }
-.btn-dark { background: var(--ink); color: #fff; }
-.btn-dark:hover { background: #000; transform: translateY(-1px); }
 
 /* ── HERO ── */
 .hero { background: radial-gradient(120% 130% at 80% 0%, #123b8f 0%, var(--navy) 45%, var(--navy-2) 100%); color: #fff; position: relative; overflow: hidden; }
 .hero::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1px, transparent 0); background-size: 28px 28px; pointer-events: none; }
-.hero-inner { max-width: 1180px; margin: 0 auto; padding: 92px 32px 96px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
+.hero-inner { max-width: 1180px; margin: 0 auto; padding: 86px 32px 92px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
 .hero .eyebrow { color: var(--sky); }
 .hero .eyebrow::before { background: var(--sky); }
 .hero h1 { font-size: 60px; font-weight: 800; line-height: .98; color: #fff; margin-bottom: 22px; }
@@ -82,15 +79,11 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 .hero-trust span { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); }
 .hero-trust span::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sky); }
 
-/* hero showcase panel */
-.hero-panel { background: linear-gradient(180deg, #ffffff 0%, #f7f8fa 100%); border-radius: 16px; padding: 40px 36px 30px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); position: relative; }
-.hero-panel-logo { width: 100%; max-width: 320px; margin: 0 auto 22px; display: block; }
+.hero-panel { background: linear-gradient(180deg, #ffffff 0%, #f7f8fa 100%); border-radius: 16px; padding: 40px 34px 30px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); }
+.hero-panel-logo { width: 100%; max-width: 430px; margin: 0 auto 22px; display: block; }
 .hero-panel-cap { text-align: center; border-top: 1px solid var(--line); padding-top: 20px; }
-.hero-panel-cap strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 19px; font-weight: 700; color: var(--ink); letter-spacing: .02em; }
+.hero-panel-cap strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--ink); letter-spacing: .02em; }
 .hero-panel-cap span { font-size: 13px; color: var(--gray-lt); }
-.hero-status { position: absolute; top: 20px; right: 20px; display: inline-flex; align-items: center; gap: 7px; background: #fff; border: 1px solid var(--line); border-radius: 30px; padding: 6px 13px; box-shadow: 0 6px 18px rgba(0,0,0,.1); }
-.hero-status .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
-.hero-status span { font-size: 12px; font-weight: 700; color: var(--ink); }
 
 /* ── TRUST STRIP ── */
 .trust-strip { background: var(--paper); border-bottom: 1px solid var(--line); }
@@ -101,18 +94,20 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 .tstrip span { font-size: 13px; font-weight: 700; color: var(--ink); white-space: nowrap; }
 
 /* ── SECTION BASE ── */
-.sec { padding: 96px 32px; }
-.sec-head { max-width: 640px; margin-bottom: 52px; }
+.sec { padding: 92px 32px; }
+.sec-head { max-width: 640px; margin-bottom: 50px; }
 .sec-head .lead { margin-top: 14px; }
 .sec-paper { background: var(--paper); }
 
 /* ── SERVICES ── */
-.svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-.svc { background: #fff; padding: 28px 24px; transition: background .18s; position: relative; }
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.svc { background: #fff; padding: 30px 26px; transition: background .18s; }
 .svc:hover { background: var(--paper); }
 .svc-no { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--blue); letter-spacing: 1px; margin-bottom: 14px; display: block; }
-.svc h3 { font-size: 19px; font-weight: 700; color: var(--ink); margin-bottom: 7px; line-height: 1.1; }
-.svc p { font-size: 13.5px; color: var(--gray); line-height: 1.6; }
+.svc h3 { font-size: 21px; font-weight: 700; color: var(--ink); margin-bottom: 8px; line-height: 1.1; }
+.svc p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+.svc-more { margin-top: 26px; font-size: 15px; color: var(--gray); line-height: 1.7; }
+.svc-more strong { color: var(--ink); font-weight: 700; }
 
 /* ── ABOUT ── */
 .about-grid { display: grid; grid-template-columns: 340px 1fr; gap: 60px; align-items: center; }
@@ -127,19 +122,13 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
 .about-tags span { font-size: 12px; font-weight: 700; color: var(--blue); background: #fff; border: 1px solid var(--line-d); border-radius: 30px; padding: 7px 15px; }
 
-/* ── WHO WE HELP (compact band) ── */
-.who { background: var(--ink); color: #fff; padding: 60px 32px; }
-.who-inner { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; gap: 50px; align-items: center; }
-.who h2 { font-size: 32px; font-weight: 800; color: #fff; line-height: 1.05; }
-.who h2 + p { font-size: 14px; color: rgba(255,255,255,.55); margin-top: 10px; }
-.who-list { display: flex; flex-wrap: wrap; gap: 10px; }
-.who-list span { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.85); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 11px 17px; transition: background .15s; }
-.who-list span:hover { background: rgba(255,255,255,.12); }
-
-/* ── EQUIPMENT ── */
-.equip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
-.equip-grid span { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line-d); border-radius: 8px; padding: 12px 18px; }
-.equip-grid span::before { content: ''; width: 6px; height: 6px; border-radius: 1px; background: var(--blue); transform: rotate(45deg); }
+/* ── COMBINED: WHO WE HELP + EQUIPMENT ── */
+.combo { background: var(--ink); color: #fff; }
+.combo-inner { max-width: 1180px; margin: 0 auto; padding: 64px 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.combo-col h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky); margin-bottom: 18px; }
+.combo-tags { display: flex; flex-wrap: wrap; gap: 9px; }
+.combo-tags span { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.85); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 10px 16px; transition: background .15s; }
+.combo-tags span:hover { background: rgba(255,255,255,.12); }
 
 /* ── RECENT WORK ── */
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -163,7 +152,7 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 /* ── SERVICE AREA ── */
 .area { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
 .area::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0); background-size: 30px 30px; }
-.area-inner { max-width: 1180px; margin: 0 auto; padding: 80px 32px; position: relative; z-index: 1; max-width: 760px; }
+.area-inner { max-width: 760px; margin: 0 auto; padding: 80px 32px; position: relative; z-index: 1; }
 .area .eyebrow { color: var(--sky); }
 .area .eyebrow::before { background: var(--sky); }
 .area h2 { font-size: 40px; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.04; }
@@ -203,8 +192,8 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92);
 
 /* ── FOOTER ── */
 footer { background: var(--ink); color: #fff; }
-.foot-top { max-width: 1180px; margin: 0 auto; padding: 60px 32px 40px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr; gap: 44px; border-bottom: 1px solid rgba(255,255,255,.1); }
-.foot-logo { height: 64px; width: auto; margin-bottom: 16px; filter: brightness(0) invert(1); opacity: .92; }
+.foot-top { max-width: 1180px; margin: 0 auto; padding: 58px 32px 40px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr; gap: 44px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.foot-logo { height: 70px; width: auto; margin-bottom: 16px; filter: brightness(0) invert(1); opacity: .92; }
 .foot-brand p { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.6; margin-bottom: 16px; max-width: 280px; }
 .foot-badges { display: flex; flex-wrap: wrap; gap: 6px; }
 .foot-badges span { font-size: 10px; font-weight: 700; color: rgba(255,255,255,.55); background: rgba(255,255,255,.07); border-radius: 4px; padding: 4px 10px; letter-spacing: .3px; }
@@ -229,18 +218,19 @@ footer { background: var(--ink); color: #fff; }
   .foot-top { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 860px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 44px; padding: 64px 24px 72px; }
-  .hero-panel { max-width: 420px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 68px; }
+  .hero-panel { max-width: 460px; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .about-photo { max-width: 340px; }
-  .who-inner { grid-template-columns: 1fr; gap: 24px; }
+  .combo-inner { grid-template-columns: 1fr; gap: 38px; }
   .work-grid { grid-template-columns: 1fr 1fr; }
   .quote-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 @media (max-width: 680px) {
   .nav-center, .nav-phone span { display: none; }
-  .nav-inner { padding: 10px 20px; }
-  .sec { padding: 64px 22px; }
+  .nav-inner { padding: 9px 20px; }
+  .nav-logo img { height: 52px; }
+  .sec { padding: 60px 22px; }
   .hero h1 { font-size: 42px; }
   .h2, .area h2 { font-size: 34px; }
   .tstrip { flex: 0 0 50%; border-bottom: 1px solid var(--line); }
@@ -251,7 +241,7 @@ footer { background: var(--ink); color: #fff; }
   .work-grid { grid-template-columns: 1fr; }
   .proc-grid { grid-template-columns: 1fr; gap: 34px; }
   .proc-grid::before { display: none; }
-  .who, .area-inner { padding-left: 22px; padding-right: 22px; }
+  .combo-inner, .area-inner { padding-left: 22px; padding-right: 22px; }
   .foot-top { grid-template-columns: 1fr; gap: 30px; padding: 48px 22px 32px; }
   .foot-bottom { padding: 20px 22px; }
 }
@@ -304,7 +294,6 @@ footer { background: var(--ink); color: #fff; }
       </div>
     </div>
     <div class="hero-panel">
-      <div class="hero-status"><span class="dot"></span><span>Now Booking</span></div>
       <img class="hero-panel-logo" src="./logo.png" alt="Grizzy Field Solutions LLC logo" onerror="this.style.display='none'">
       <div class="hero-panel-cap">
         <strong>Free On-Site Estimates</strong>
@@ -331,22 +320,17 @@ footer { background: var(--ink); color: #fff; }
     <div class="sec-head">
       <span class="eyebrow">What We Do</span>
       <h2 class="h2">Land Clearing &amp; Site Services</h2>
-      <p class="lead">From overgrown lots to finished site prep, we help you open up, clean up, and get your property ready for what's next.</p>
+      <p class="lead">From overgrown lots to finished site prep, we help you open up, clean up, and get your property ready.</p>
     </div>
     <div class="svc-grid">
       <div class="svc"><span class="svc-no">01</span><h3>Land Clearing</h3><p>Brush, small trees, and overgrowth cleared for usable, accessible land.</p></div>
       <div class="svc"><span class="svc-no">02</span><h3>Forestry Mulching</h3><p>Thick vegetation reduced to natural mulch in a single pass.</p></div>
       <div class="svc"><span class="svc-no">03</span><h3>Brush Removal</h3><p>Heavy brush, vines, and overgrowth removed and cleaned up.</p></div>
-      <div class="svc"><span class="svc-no">04</span><h3>Tree &amp; Vegetation Clearing</h3><p>Small trees and saplings cleared as part of larger cleanup.</p></div>
-      <div class="svc"><span class="svc-no">05</span><h3>Site Prep &amp; Grading</h3><p>Ground prepped and leveled for homesites, driveways, and builds.</p></div>
-      <div class="svc"><span class="svc-no">06</span><h3>Driveway &amp; Access</h3><p>Driveways, trails, and entry points opened up and cleared.</p></div>
-      <div class="svc"><span class="svc-no">07</span><h3>Pasture &amp; Field Cleanup</h3><p>Fields, fence lines, and pasture restored to usable shape.</p></div>
-      <div class="svc"><span class="svc-no">08</span><h3>Stump Grinding</h3><p>Unwanted stumps ground down and removed from the site.</p></div>
-      <div class="svc"><span class="svc-no">09</span><h3>Debris Hauling</h3><p>Brush, debris, and cleared material hauled off when needed.</p></div>
-      <div class="svc"><span class="svc-no">10</span><h3>Dirt &amp; Tractor Work</h3><p>Grading support and equipment-based property improvements.</p></div>
-      <div class="svc"><span class="svc-no">11</span><h3>Storm Cleanup</h3><p>Fallen trees and storm debris cleared when it fits our scope.</p></div>
-      <div class="svc"><span class="svc-no">12</span><h3>Skid Steer Work</h3><p>The right machine matched to clearing, access, and prep jobs.</p></div>
+      <div class="svc"><span class="svc-no">04</span><h3>Site Prep &amp; Grading</h3><p>Ground prepped and leveled for homesites, driveways, and builds.</p></div>
+      <div class="svc"><span class="svc-no">05</span><h3>Driveway &amp; Access</h3><p>Driveways, trails, and entry points opened up and cleared.</p></div>
+      <div class="svc"><span class="svc-no">06</span><h3>Pasture &amp; Field Cleanup</h3><p>Fields, fence lines, and pasture restored to usable shape.</p></div>
     </div>
+    <p class="svc-more">Also offering <strong>stump grinding</strong>, <strong>debris hauling</strong>, <strong>dirt &amp; tractor work</strong>, <strong>storm cleanup</strong>, and <strong>skid steer work</strong>.</p>
   </div>
 </section>
 
@@ -368,7 +352,7 @@ footer { background: var(--ink); color: #fff; }
         <span class="eyebrow">About the Company</span>
         <h2 class="h2" style="margin-bottom:22px">Veteran-Owned.<br>Owner-Operated.</h2>
         <p>Grizzy Field Solutions is owner-operated by <strong>Bryce Griswell</strong>, a veteran who has spent his life around land, equipment, and hard work. He built the company around what he knows best &mdash; clearing land, improving access, and getting properties ready to use.</p>
-        <p>We keep it straightforward: clear communication, dependable work, and the right equipment for the job. From a single residential lot to acres of overgrowth, we handle it from first estimate to finished site.</p>
+        <p>We keep it straightforward: clear communication, dependable work, and the right equipment for the job &mdash; from a single residential lot to acres of overgrowth.</p>
         <div class="about-tags">
           <span>Veteran-Owned</span>
           <span>Family-Owned</span>
@@ -381,49 +365,35 @@ footer { background: var(--ink); color: #fff; }
   </div>
 </section>
 
-<!-- WHO WE HELP -->
-<div class="who">
-  <div class="who-inner">
-    <div>
-      <h2>Who We Help</h2>
-      <p>Residential, agricultural, commercial &amp; contractor projects.</p>
+<!-- WHO WE HELP + EQUIPMENT -->
+<div class="combo">
+  <div class="combo-inner">
+    <div class="combo-col">
+      <h3>Who We Help</h3>
+      <div class="combo-tags">
+        <span>Homeowners</span>
+        <span>Rural Landowners</span>
+        <span>Contractors</span>
+        <span>Farmers &amp; Pasture Owners</span>
+        <span>Commercial Properties</span>
+        <span>Real Estate Investors</span>
+      </div>
     </div>
-    <div class="who-list">
-      <span>Homeowners</span>
-      <span>Rural Landowners</span>
-      <span>Contractors</span>
-      <span>Farmers &amp; Pasture Owners</span>
-      <span>Commercial Properties</span>
-      <span>Real Estate Investors</span>
-      <span>Homesite Preparation</span>
+    <div class="combo-col">
+      <h3>Equipment We Run</h3>
+      <div class="combo-tags">
+        <span>Tractor</span>
+        <span>Skid Steer</span>
+        <span>Forestry Mulcher</span>
+        <span>Mini Excavator</span>
+        <span>Grapple Bucket</span>
+        <span>Brush Cutter</span>
+        <span>Dump Trailer</span>
+        <span>Bush Hog</span>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- EQUIPMENT -->
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Equipment</span>
-      <h2 class="h2">Ready for the Job</h2>
-      <p class="lead">Different properties call for different tools &mdash; we bring the equipment the work actually needs.</p>
-    </div>
-    <div class="equip-grid">
-      <span>Tractor</span>
-      <span>Skid Steer</span>
-      <span>Forestry Mulcher</span>
-      <span>Bush Hog</span>
-      <span>Grapple Bucket</span>
-      <span>Mini Excavator</span>
-      <span>Box Blade</span>
-      <span>Brush Cutter</span>
-      <span>Dump Trailer</span>
-      <span>Trailer</span>
-      <span>Truck</span>
-      <span>Chainsaws</span>
-    </div>
-  </div>
-</section>
 
 <!-- RECENT WORK -->
 <section class="sec sec-paper" id="work">
@@ -431,20 +401,20 @@ footer { background: var(--ink); color: #fff; }
     <div class="sec-head">
       <span class="eyebrow">Recent Work</span>
       <h2 class="h2">Out in the Field</h2>
-      <p class="lead">Project photos are on the way. Here's the kind of work we take on across the area.</p>
+      <p class="lead">Project photos are on the way &mdash; here's the kind of work we take on.</p>
     </div>
     <div class="work-grid">
       <div class="work">
         <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
-        <div class="work-body"><span class="tag">Gainesville Area</span><h3>Overgrown Lot Clearing</h3><p>Brush, small trees, and overgrowth cleared to open up land for access and future use.</p></div>
+        <div class="work-body"><span class="tag">Gainesville Area</span><h3>Overgrown Lot Clearing</h3><p>Brush and overgrowth cleared to open up land for access and future use.</p></div>
       </div>
       <div class="work">
         <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
-        <div class="work-body"><span class="tag">North Central FL</span><h3>Driveway &amp; Access Clearing</h3><p>Access areas opened and cleaned so the property is easier to reach and maintain.</p></div>
+        <div class="work-body"><span class="tag">North Central FL</span><h3>Driveway &amp; Access Clearing</h3><p>Access areas opened and cleaned so the property is easier to reach.</p></div>
       </div>
       <div class="work">
         <div class="work-img"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" opacity=".4"><rect x="3" y="6" width="28" height="21" rx="2" stroke="#9a978d" stroke-width="2"/><circle cx="17" cy="17" r="6" stroke="#9a978d" stroke-width="2"/><circle cx="26" cy="11" r="2" fill="#9a978d"/></svg><span>Add before / after photo</span></div>
-        <div class="work-body"><span class="tag">Surrounding Areas</span><h3>Field &amp; Pasture Cleanup</h3><p>Open land, fence lines, and fields cleaned up to make rural property usable again.</p></div>
+        <div class="work-body"><span class="tag">Surrounding Areas</span><h3>Field &amp; Pasture Cleanup</h3><p>Open land and fence lines cleaned up to make rural property usable.</p></div>
       </div>
     </div>
   </div>
@@ -458,21 +428,9 @@ footer { background: var(--ink); color: #fff; }
       <h2 class="h2">A Simple, Straightforward Process</h2>
     </div>
     <div class="proc-grid">
-      <div class="proc">
-        <div class="num">1</div>
-        <h3>Request a Free Estimate</h3>
-        <p>Send us the project details, property location, and the type of work you need done.</p>
-      </div>
-      <div class="proc">
-        <div class="num">2</div>
-        <h3>We Review the Property</h3>
-        <p>We look at the land, access, scope, and equipment needs before giving you an estimate.</p>
-      </div>
-      <div class="proc">
-        <div class="num">3</div>
-        <h3>We Get to Work</h3>
-        <p>We clear, clean up, and prepare the property with reliable equipment and clear communication.</p>
-      </div>
+      <div class="proc"><div class="num">1</div><h3>Request a Free Estimate</h3><p>Send us the project details, property location, and the type of work you need.</p></div>
+      <div class="proc"><div class="num">2</div><h3>We Review the Property</h3><p>We look at the land, access, scope, and equipment needs before giving an estimate.</p></div>
+      <div class="proc"><div class="num">3</div><h3>We Get to Work</h3><p>We clear, clean up, and prepare the property with reliable equipment.</p></div>
     </div>
   </div>
 </section>
@@ -482,15 +440,12 @@ footer { background: var(--ink); color: #fff; }
   <div class="area-inner">
     <span class="eyebrow">Where We Work</span>
     <h2>Serving Gainesville &amp; North Central Florida</h2>
-    <p>We serve Gainesville, Alachua County, Levy County, Marion County, and surrounding communities &mdash; including work within about a 75-mile radius of Gainesville when the job makes sense.</p>
+    <p>Based in Gainesville, we cover Alachua, Levy, and Marion Counties and the surrounding communities &mdash; generally within about 75 miles.</p>
     <div class="area-cities">
       <span>Gainesville</span>
       <span>Newberry</span>
       <span>Alachua</span>
       <span>High Springs</span>
-      <span>Archer</span>
-      <span>Bronson</span>
-      <span>Williston</span>
       <span>Ocala</span>
       <span>&amp; Surrounding Areas</span>
     </div>
@@ -504,7 +459,7 @@ footer { background: var(--ink); color: #fff; }
       <div class="quote-info">
         <span class="eyebrow">Get in Touch</span>
         <h2 class="h2">Request a Free Estimate</h2>
-        <p class="lead">Tell us what you need cleared, where the property is, and your timeline. We'll review it and follow up with next steps.</p>
+        <p class="lead">Tell us what you need cleared, where the property is, and your timeline. We'll follow up with next steps.</p>
         <a href="tel:+13525550100" class="contact-card">
           <span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3h3l1.2 3.6L6.5 8.2c.9 1.9 2.4 3.4 4.3 4.3l1.6-1.7L16 12v3c0 .6-.4 1-1 1C8.4 16 4 11.6 4 5c0-.6.4-1 1-1Z" fill="#fff"/></svg></span>
           <span class="tx"><strong>(352) 555-0100</strong><span>Call or text &mdash; fastest response</span></span>
@@ -539,7 +494,6 @@ footer { background: var(--ink); color: #fff; }
                 <option>Land clearing</option>
                 <option>Forestry mulching</option>
                 <option>Brush removal</option>
-                <option>Tree &amp; vegetation clearing</option>
                 <option>Site prep &amp; grading</option>
                 <option>Driveway &amp; access clearing</option>
                 <option>Pasture &amp; field cleanup</option>
