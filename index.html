@@ -10,11 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ─────────────────────────────────────────────
-   TODO — replace placeholder contact info before launch:
-   PHONE:     (352) 555-0100
-   EMAIL:     info@grizzyfieldsolutions.com
-   FACEBOOK:  https://facebook.com/grizzyfieldsolutions
-   INSTAGRAM: https://instagram.com/grizzyfieldsolutions
+   TODO — before launch:
+   1. FORM: paste the Web3Forms access key into the form
+      (search "YOUR_WEB3FORMS_ACCESS_KEY"). Get a free key at
+      https://web3forms.com using Bryce's business email — that
+      inbox is where estimate requests will be delivered.
+   2. Replace placeholder contact info:
+      PHONE:     (352) 555-0100
+      EMAIL:     info@grizzyfieldsolutions.com
+      FACEBOOK:  https://facebook.com/grizzyfieldsolutions
+      INSTAGRAM: https://instagram.com/grizzyfieldsolutions
    ───────────────────────────────────────────── */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -475,21 +480,26 @@ footer { background: var(--ink); color: #fff; }
       </div>
 
       <div class="form-card">
-        <div id="quote-form">
+        <form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- TODO: paste the Web3Forms access key below (get it free at https://web3forms.com using Bryce's business email). The form will not deliver until this is set. -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New Estimate Request — Grizzy Field Solutions">
+          <input type="hidden" name="from_name" value="Grizzy Field Solutions Website">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important">
           <h3>Tell us about your project</h3>
           <p class="sub">We respond within 24 hours.</p>
           <div class="fg">
             <div class="f-row">
-              <div class="f"><label>First Name</label><input type="text" id="f-first" placeholder="First name"></div>
-              <div class="f"><label>Last Name</label><input type="text" id="f-last" placeholder="Last name"></div>
+              <div class="f"><label>First Name *</label><input type="text" name="first_name" id="f-first" placeholder="First name" required></div>
+              <div class="f"><label>Last Name</label><input type="text" name="last_name" id="f-last" placeholder="Last name"></div>
             </div>
             <div class="f-row">
-              <div class="f"><label>Phone</label><input type="tel" id="f-phone" placeholder="Your phone"></div>
-              <div class="f"><label>Email</label><input type="email" id="f-email" placeholder="Your email"></div>
+              <div class="f"><label>Phone *</label><input type="tel" name="phone" id="f-phone" placeholder="Your phone" required></div>
+              <div class="f"><label>Email</label><input type="email" name="email" id="f-email" placeholder="Your email"></div>
             </div>
-            <div class="f"><label>Property Location / City</label><input type="text" id="f-location" placeholder="City or general area"></div>
-            <div class="f"><label>Service Needed</label>
-              <select id="f-service">
+            <div class="f"><label>Property Location / City</label><input type="text" name="location" id="f-location" placeholder="City or general area"></div>
+            <div class="f"><label>Service Needed *</label>
+              <select name="service" id="f-service" required>
                 <option value="">Select a service...</option>
                 <option>Land clearing</option>
                 <option>Forestry mulching</option>
@@ -506,7 +516,7 @@ footer { background: var(--ink); color: #fff; }
             </div>
             <div class="f-row">
               <div class="f"><label>Project Size</label>
-                <select id="f-acres">
+                <select name="project_size" id="f-acres">
                   <option value="">Select...</option>
                   <option>Under 1 acre</option>
                   <option>1&ndash;5 acres</option>
@@ -517,7 +527,7 @@ footer { background: var(--ink); color: #fff; }
                 </select>
               </div>
               <div class="f"><label>Timeline</label>
-                <select id="f-timeline">
+                <select name="timeline" id="f-timeline">
                   <option value="">Select...</option>
                   <option>ASAP</option>
                   <option>1&ndash;2 weeks</option>
@@ -526,11 +536,11 @@ footer { background: var(--ink); color: #fff; }
                 </select>
               </div>
             </div>
-            <div class="f"><label>Project Details</label><textarea id="f-notes" placeholder="Describe the work, access, obstacles, or anything else we should know..."></textarea></div>
+            <div class="f"><label>Project Details</label><textarea name="details" id="f-notes" placeholder="Describe the work, access, obstacles, or anything else we should know..."></textarea></div>
           </div>
-          <button class="btn btn-blue" onclick="submitQuote()">Send Estimate Request &rarr;</button>
+          <button type="submit" class="btn btn-blue">Send Estimate Request &rarr;</button>
           <p class="form-note">Your information is never shared.</p>
-        </div>
+        </form>
         <div class="form-ok" id="form-ok">
           <div class="check"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M6 13.5l4.5 4.5L20 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <h3>Request received</h3>
@@ -597,17 +607,35 @@ footer { background: var(--ink); color: #fff; }
 </footer>
 
 <script>
-function submitQuote() {
-  var first = document.getElementById("f-first").value.trim();
-  var phone = document.getElementById("f-phone").value.trim();
-  var service = document.getElementById("f-service").value;
-  if (!first || !phone || !service) {
-    alert("Please add your name, phone number, and the service you need so we can follow up.");
-    return;
-  }
-  document.getElementById("quote-form").style.display = "none";
-  document.getElementById("form-ok").style.display = "block";
-}
+(function () {
+  var form = document.getElementById("quote-form");
+  if (!form) return;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var btn = form.querySelector("button[type=submit]");
+    var label = btn ? btn.innerHTML : "";
+    if (btn) { btn.disabled = true; btn.innerHTML = "Sending..."; }
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      if (data.success) {
+        form.style.display = "none";
+        document.getElementById("form-ok").style.display = "block";
+      } else {
+        if (btn) { btn.disabled = false; btn.innerHTML = label; }
+        alert("Sorry — your request didn't go through. Please call or email us and we'll take care of it right away.");
+      }
+    })
+    .catch(function () {
+      if (btn) { btn.disabled = false; btn.innerHTML = label; }
+      alert("Network error — please check your connection, or reach us directly by phone or email.");
+    });
+  });
+})();
 </script>
 </body>
 </html>
