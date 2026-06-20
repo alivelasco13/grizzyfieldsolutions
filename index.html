@@ -11,13 +11,10 @@
 <style>
 /* ─────────────────────────────────────────────
    TODO — before launch:
-   1. FORM: paste the Web3Forms access key into the form
-      (search "YOUR_WEB3FORMS_ACCESS_KEY"). Get a free key at
-      https://web3forms.com using Bryce's business email — that
-      inbox is where estimate requests will be delivered.
-   2. Replace placeholder contact info:
+   1. FORM: DONE — estimate requests deliver to info@grizzyfieldsolutions.com via Web3Forms.
+   2. Replace placeholder contact info shown on the page:
       PHONE:     (352) 555-0100
-      EMAIL:     info@grizzyfieldsolutions.com
+      EMAIL:     info@grizzyfieldsolutions.com (confirm this inbox is live)
       FACEBOOK:  https://facebook.com/grizzyfieldsolutions
       INSTAGRAM: https://instagram.com/grizzyfieldsolutions
    ───────────────────────────────────────────── */
@@ -481,8 +478,8 @@ footer { background: var(--ink); color: #fff; }
 
       <div class="form-card">
         <form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- TODO: paste the Web3Forms access key below (get it free at https://web3forms.com using Bryce's business email). The form will not deliver until this is set. -->
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <!-- Web3Forms access key — estimate requests deliver to info@grizzyfieldsolutions.com (this key is meant to be public) -->
+          <input type="hidden" name="access_key" value="c83da538-d40d-4659-8c91-4f3ea4e5d5c7">
           <input type="hidden" name="subject" value="New Estimate Request — Grizzy Field Solutions">
           <input type="hidden" name="from_name" value="Grizzy Field Solutions Website">
           <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important">
